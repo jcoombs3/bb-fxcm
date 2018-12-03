@@ -51,7 +51,9 @@
               "apps/fxcm-app/src/favicon.ico",
               "apps/fxcm-app/src/assets"
             ],
-            "styles": [],
+            "styles": [
+              "themes/fxcm-theme/scss/main.scss"
+            ],
             "scripts": [
               "apps/fxcm-app/src/dev-mock.js"
             ]
