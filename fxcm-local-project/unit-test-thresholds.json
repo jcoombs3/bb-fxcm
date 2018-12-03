@@ -1,0 +1,9 @@
+{
+  "emitWarning": true,
+  "global": {
+    "statements": 60,
+    "lines": 60,
+    "branches": 60,
+    "functions": 60
+  }
+}
