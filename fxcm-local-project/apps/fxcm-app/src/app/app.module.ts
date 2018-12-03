@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { customClassId } from './app.customClassId';
 import { environment } from '../environments/environment';
 import { FxcmStyleguideModule } from '@backbase/fxcm-styleguide';
+import { FxcmCustomUiModule } from '@backbase/fxcm-custom-ui';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FxcmStyleguideModule } from '@backbase/fxcm-styleguide';
     }),
     BbFormsUiModule,
     FxcmStyleguideModule,
+    FxcmCustomUiModule,
   ],
   providers: [...environment.mockProviders],
   bootstrap: [AppComponent]

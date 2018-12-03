@@ -1,0 +1,38 @@
+/**
+* FXCM Form Button
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663670
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   11-29-2018
+*
+* Changes from Design:
+* - None
+*/
+
+$btn_border_radius: 3px;
+$btn_padding_vertical: 10px;
+$btn_padding_horizontal: 20px;
+
+.btn {
+  @include open_sans_light();
+  border-radius: $btn_border_radius;
+  text-transform: uppercase;
+  padding: $btn_padding_vertical $btn_padding_horizontal;
+  
+  &[class^='btn-outline'], &[class*=' btn-outline'] {
+    @include open_sans();
+    border-width: 2px;
+    padding: ($btn_padding_vertical - 2px) ($btn_padding_horizontal - 2px);
+    
+    &:before {
+      margin-right: ($btn_padding_horizontal - 2px);
+    }
+  }
+
+  &:before {
+    content: '-';
+    color: inherit;
+    margin-right: $btn_padding_horizontal;
+  }
+}

@@ -20,15 +20,9 @@ window.document.addEventListener('DOMContentLoaded', () => {
   };
 
   const model = {
-    name: 'bb-fxcm-app-ang',
+    name: 'my-forms-app',
     properties: {},
     children: [
-      {
-        name: 'styleguide',
-        properties: {
-          classId: 'FxcmStyleguideComponent'
-        }
-      },
       {
         name: 'my-forms-container',
         properties: {

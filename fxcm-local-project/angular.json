@@ -160,6 +160,25 @@
           }
         }
       }
+    },
+    "fxcm-custom-ui": {
+      "root": "libs/fxcm-custom-ui",
+      "sourceRoot": "libs/fxcm-custom-ui/src",
+      "projectType": "library",
+      "prefix": "bb",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/fxcm-custom-ui/**/*.ts"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
