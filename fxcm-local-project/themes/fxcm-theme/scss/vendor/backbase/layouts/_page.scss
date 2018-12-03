@@ -1,0 +1,39 @@
+
+.page-container {
+  @include size(100%, 100%);
+}
+
+.mw-1140 {
+  max-width: 1140px;
+}
+
+.rb-navbar-top {
+  height: $navbar-top-height;
+  box-shadow: $box-shadow-1;
+  z-index: 10;
+  position: fixed;
+  background-color: $white;
+  width: 100%;
+
+  .navbar-header {
+    height: $navbar-top-height;
+  }
+
+  .notifications-area {
+    > div {
+      margin: 0 $base-margin-height;
+
+      &:last-child {
+        margin: 0
+      }
+    }
+  }
+}
+
+.bb-page-background {
+  background: url(#{$path-to-images}/login-background.jpg);
+  background-size: cover;
+  @extend .h-100vh;
+  @extend .w-100vw;
+  overflow: hidden;
+}

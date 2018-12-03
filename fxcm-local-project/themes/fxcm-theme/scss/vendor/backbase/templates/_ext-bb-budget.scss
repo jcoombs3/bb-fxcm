@@ -1,0 +1,16 @@
+.budget-card-wrapper {
+  max-width: $budget-card-width;
+  min-width: $budget-card-width;
+
+  .budget-card-category-icon {
+    color: $gray-200;
+  }
+
+  .budget-amount {
+    color: $gray-400;
+  }
+
+  .budget-card-options-btn, .amount-regular-color .amount {
+    color: inherit;
+  }
+}

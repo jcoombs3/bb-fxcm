@@ -1,0 +1,67 @@
+// h1
+$h1-font-size: 32px;
+$h1-font-weight: 500;
+
+// h2
+$h2-font-size: 24px;
+$h1-font-weight: 500;
+
+// h3
+$h3-font-size: 20px;
+$h1-font-weight: 500;
+
+// h4
+$h4-font-size: 16px;
+$h1-font-weight: 500;
+
+// h5
+$h5-font-size: 13px;
+$h1-font-weight: 500;
+
+// Z index
+$z-index-1: 1;
+$z-index-2: 2;
+$z-index-3: 3;
+$z-index-4: 4;
+$z-index-5: 5;
+$z-index-6: 6;
+$z-index-7: 7;
+$z-index-8: 8;
+$z-index-9: 9;
+$z-index-10: 10;
+
+// page header
+$page-header-background-color: $accent-blue-a12;
+
+// sidebar
+$sidebar-divider-color: $accent-blue-a12;
+$sidebar-navigation-link-color: $white-a80;
+
+// sidebar heading
+$sidebar-heading-color: $white-a60;
+
+// navigation
+
+// box shadows
+$box-shadow-1: 0 2px 3px $black-a20;
+$box-shadow-1-top: 0 -2px 3px $black-a20;
+$box-shadow-2: 0 4px 6px $black-a20;
+$box-shadow-4: 0 8px 24px $black-a20;
+
+// base heights
+$tiny-height: 10px;
+$small-height: $tiny-height*1.5;
+$base-height: $tiny-height*2;
+$large-height: $tiny-height*2.5;
+
+// padding
+$tiny-padding-height: $tiny-height;
+$small-padding-height: $small-height;
+$base-padding-height: $base-height;
+$large-padding-height: $large-height;
+
+// margin
+$tiny-margin-height: $tiny-height;
+$small-margin-height: $small-height;
+$base-margin-height: $base-height;
+$large-margin-height: $large-height;

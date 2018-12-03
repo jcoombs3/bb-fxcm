@@ -1,0 +1,26 @@
+.product-item-group {
+  @include box-shadow($box-shadow-1);
+}
+
+.product-item-group {
+  > *:not(:last-of-type) > .product-item {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  > *:not(:first-of-type) > .product-item {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-top: 1px solid $gray-100;
+  }
+}
+
+div[class^="bb-product-item-"] {
+  &.product-item {
+    box-shadow: inset 4px 0 0 $blue;
+    overflow: hidden;
+
+    .product-item-content {
+      background-color: $white;
+    }
+  }
+}

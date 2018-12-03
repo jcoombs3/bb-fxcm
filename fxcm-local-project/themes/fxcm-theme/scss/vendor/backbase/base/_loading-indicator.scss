@@ -1,0 +1,16 @@
+$stroke-width-base: 2 !default;
+
+$loading-indicator-widths-map: (
+  sm: (
+    width: 21px,
+    stroke-width: $stroke-width-base * 1
+  ),
+  md: (
+    width: 50px,
+    stroke-width: $stroke-width-base * 2
+  ),
+  lg: (
+    width: 100px,
+    stroke-width: $stroke-width-base * 3
+  )
+);

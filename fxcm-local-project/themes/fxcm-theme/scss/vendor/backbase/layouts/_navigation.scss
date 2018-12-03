@@ -1,0 +1,43 @@
+.rb-sidebar {
+  .nav li a {
+    display: flex;
+    align-items: center;
+    height: $navigation-item-height;
+    padding-left: $small-padding-height;
+  }
+
+  .nav li a:focus {
+    background-color: $accent-blue-a18;
+  }
+
+  .nav li.active {
+    background-color: $accent-blue-a18;
+    border-left: 3px solid $accent-blue;
+  }
+
+  .nav li.active a {
+    color: $navigation-link-active-color;
+  }
+
+  .bb-universal-nav {
+    margin-top: 1.5rem;
+    &-item {
+      &-menu-icon {
+        @extend .d-inline-block;
+
+        font-size: $sidebar-icon-size;
+        margin-right: 18px;
+        max-width: 20px;
+      }
+      &-title {
+        line-height: 20px;
+      }
+    }
+
+    &-divider,
+    &-header {
+      border: none;
+    }
+  }
+}
+

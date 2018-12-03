@@ -1,0 +1,57 @@
+$category-list: (
+  ("home", "bicon-home", color("green")),
+  ("mortgage", "bicon-home", color("green")),
+  ("rent", "bicon-home", color("green")),
+
+  ("health-beauty", "bicon-favorite", color("pink")),
+  ("beauty", "bicon-favorite", color("pink")),
+  ("health-fitness", "bicon-favorite", color("pink")),
+
+  ("food-drinks", "bicon-restaurant", color("orange")),
+  ("alcohol-bars", "bicon-restaurant", color("orange")),
+  ("fast-food", "bicon-restaurant", color("orange")),
+  ("groceries", "bicon-restaurant", color("orange")),
+  ("restaurants", "bicon-restaurant", color("orange")),
+
+  ("transportation", "bicon-directions-car", color("teal")),
+  ("car", "bicon-directions-car", color("teal")),
+  ("public-transport", "bicon-directions-car", color("teal")),
+
+  ("shopping", "bicon-shopping-cart", color("yellow")),
+  ("clothing", "bicon-shopping-cart", color("yellow")),
+  ("electronics", "bicon-shopping-cart", color("yellow")),
+
+  ("hobbies-entertainment", "bicon-local-play", color("purple")),
+
+  ("bills-utilities", "bicon-description", color("red")),
+  ("internet", "bicon-description", color("red")),
+  ("mobile-phone", "bicon-description", color("red")),
+  ("utilities", "bicon-description", color("red")),
+
+  ("income", "bicon-add-box", color("cyan")),
+  ("bonus", "bicon-add-box", color("cyan")),
+  ("salary-wages", "bicon-add-box", color("cyan")),
+
+  ("other-income", "bicon-toll", color("blue")),
+  ("interest-income", "bicon-toll", color("blue")),
+  ("rental-income", "bicon-toll", color("blue")),
+
+  ("transfers", "bicon-swap-horiz", color("indigo")),
+
+  ("uncategorised", "bicon-help-outline", color("gray")),
+
+  // Business banking categories
+  // Spending
+  ("suppliers", false, color("yellow")),
+  ("salaries", false, color("orange")),
+  ("office-rent", false, color("red")),
+  ("loan-repayment", false, $umber),
+  ("miscellaneous", false, color("pink")),
+
+  // Income
+  ("intercompany-receivable", false, color("teal")),
+  ("term-deposit", false, color("cyan")),
+  ("direct-debit-collections", false, color("blue")),
+  ("intracompany-receivable", false, color("indigo")),
+  ("interest-received", false, color("purple"))
+);

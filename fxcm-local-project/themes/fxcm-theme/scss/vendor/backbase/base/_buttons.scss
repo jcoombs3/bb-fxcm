@@ -1,0 +1,20 @@
+$btn-outline-border-width: 1px !default;
+$btn-link-color: transparentize($blue, 0.1);
+$btn-link-bg-color: $blue-050;
+
+$btn-icon-bg-color: transparent;
+$btn-icon-color: $gray-600;
+$btn-icon-hover-color: $gray-050;
+$btn-icon-active-color: $blue-050;
+
+$btn-icon-padding-x: .25rem !default;
+$btn-icon-padding-y: .25rem !default;
+$btn-icon-font-size: 2rem !default;
+$btn-icon-width: $btn-icon-font-size + ($btn-icon-padding-x * 2) !default;
+$btn-icon-height: $btn-icon-font-size + ($btn-icon-padding-y * 2) !default;
+
+$btn-icon-padding-x-sm: .5rem !default;
+$btn-icon-padding-y-sm: .5rem !default;
+$btn-icon-font-size-sm: 1.125rem !default;
+$btn-icon-width-sm: $btn-icon-font-size-sm + ($btn-icon-padding-x-sm * 2) !default;
+$btn-icon-height-sm: $btn-icon-font-size-sm + ($btn-icon-padding-y-sm * 2) !default;

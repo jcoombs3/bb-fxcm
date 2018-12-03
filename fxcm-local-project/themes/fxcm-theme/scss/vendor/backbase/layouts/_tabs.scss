@@ -1,0 +1,46 @@
+.page-layout-tabs {
+  & > .nav-tabs {
+    @extend .row;
+    @extend .px-3;
+
+    .nav-item {
+      cursor: pointer;
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+
+  &.heading-tabs {
+    & > .nav-tabs {
+      background-color: $page-header-background-color;
+      margin-top: -$base-padding-height;
+
+      .nav-link {
+        &:hover {
+          background-color: $page-header-background-color;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    @extend .py-4;
+  }
+
+  &.scrollable-tab-content {
+    .tab-pane {
+      @extend .scrollable-box-content;
+    }
+  }
+
+  &.borderless-tab-content {
+    & > .nav-tabs {
+      @extend .border-0;
+    }
+
+    .tab-content {
+      @extend .py-1;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+//
+// Navs
+//
+.nav-tabs {
+  .nav-item {
+    margin-bottom: -$nav-tabs-border-width;
+
+    &.active {
+      border: none;
+    }
+  }
+
+  .nav-link {
+    border: solid transparent;
+    border-radius: 0;
+    color: $body-color;
+
+    &, &.active {
+      border-width: 0 0 ($border-width * 3) 0;
+    }
+
+    &:hover {
+      border-color: $nav-tabs-link-active-border-color;
+      color: $body-color;
+    }
+  }
+  
+  .nav-link, .nav-link.active {
+    &:hover {
+      background-color: $nav-tabs-link-hover-bg;
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link,
+  .nav-item.active .nav-link {
+    border-color: $nav-tabs-link-active-border-color;
+    font-weight: $headings-font-weight;
+    color: $body-color;
+  }
+}

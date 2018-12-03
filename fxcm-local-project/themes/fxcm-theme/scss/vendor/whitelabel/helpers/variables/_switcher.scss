@@ -1,0 +1,9 @@
+//Switcher Styles
+
+$switcher-bg-color: $gray-050 !default;
+$switcher-border-color: $gray-200 !default;
+$switcher-checked-bg-color:lighten($green, 5%) !default;
+$switcher-checked-border-color: darken($green, 10%) !default;
+$switcher-slider-bg-color: $white !default;
+$switcher-slider-checked-bg-color: $switcher-slider-bg-color !default;
+$switcher-slider-checked-pos-x: $switcher-slider-pos-x !default;

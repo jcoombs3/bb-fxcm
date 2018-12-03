@@ -1,0 +1,29 @@
+.bg-gray-light-300 {
+  background-color: $gray-light-300;
+}
+
+.bg-accent-blue-a12 {
+  background-color: $accent-blue-a12;
+}
+
+$chart-categories-colors: ();
+
+@each $category, $icon, $color in $category-list {
+  $iconContent: null;
+  @if $icon {
+    $iconContent: map-get($icon-map, str-slice($icon, 7));
+  }
+
+  $chart-categories-colors: append(
+    $chart-categories-colors,
+    #{$category $color $iconContent},
+    'comma'
+  );
+}
+
+:root {
+  @each $category, $icon, $color in $category-list {
+    --chart-color-#{$category}: #{$color};
+  }
+  --chart-categories-colors: #{$chart-categories-colors};
+}

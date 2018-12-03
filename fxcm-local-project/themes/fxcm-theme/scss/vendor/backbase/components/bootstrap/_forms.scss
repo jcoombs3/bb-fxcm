@@ -1,0 +1,10 @@
+//
+// Textual form controls
+//
+
+.form-control {
+  // Placeholder
+  &::placeholder {
+    font-style: italic;
+  }
+}

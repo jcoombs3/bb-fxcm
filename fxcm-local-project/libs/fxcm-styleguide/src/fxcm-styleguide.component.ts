@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'bb-fxcm-styleguide',
   templateUrl: './fxcm-styleguide.component.html',
-  styles: []
+  styleUrls: ['./fxcm-styleguide.component.scss']
 })
 export class FxcmStyleguideComponent implements OnInit {
 
