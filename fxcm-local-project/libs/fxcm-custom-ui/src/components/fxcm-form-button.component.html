@@ -1,0 +1,8 @@
+<button *ngIf="model?.properties | async; let props"
+        bbFormUi [change]="change"
+        class="btn {{props.cssClassValue}}"
+        [ngClass]="{ 'btn-primary' : props.cssClassValue.length === 0 }"
+        (click)="onClick($event)"
+        [disabled]="props.disabled">
+  {{props.label}}
+</button>

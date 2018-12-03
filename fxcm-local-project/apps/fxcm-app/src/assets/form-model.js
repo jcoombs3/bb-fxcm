@@ -10,7 +10,8 @@ function createFormModel() {
         properties: {
           classId: 'BbFormButtonComponent',
           label: `I'm a button!`,
-          color: 'warning'
+          color: 'warning',
+          cssClassValue: 'btn-outline-primary'
         },
       },
       {

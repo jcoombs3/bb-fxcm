@@ -6,7 +6,7 @@ import { BackbaseCoreModule } from '@backbase/core-ang';
 import { BbFormsDirectivesModule } from '@backbase/forms-directives-ang';
 
 // Components
-import { FxcmUiButtonComponent } from './components/fxcm-ui-button.component';
+import { FxcmFormButtonComponent } from './components/fxcm-form-button.component';
 
 @NgModule({
   imports: [
@@ -14,12 +14,12 @@ import { FxcmUiButtonComponent } from './components/fxcm-ui-button.component';
     BbFormsDirectivesModule,
     BackbaseCoreModule.withConfig({
       classMap: {
-        FxcmUiButtonComponent
+        FxcmFormButtonComponent
       },
     }),
   ],
   declarations: [
-    FxcmUiButtonComponent
+    FxcmFormButtonComponent
   ]
 })
 export class FxcmCustomUiModule { }
