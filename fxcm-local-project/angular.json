@@ -139,6 +139,25 @@
           }
         }
       }
+    },
+    "fxcm-styleguide": {
+      "root": "libs/fxcm-styleguide",
+      "sourceRoot": "libs/fxcm-styleguide/src",
+      "projectType": "library",
+      "prefix": "bb",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/fxcm-styleguide/**/*.ts"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {

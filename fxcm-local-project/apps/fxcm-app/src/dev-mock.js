@@ -3,7 +3,12 @@ window.document.addEventListener('DOMContentLoaded', () => {
   const pageModel = {
     name: 'bb-fxcm-app-ang',
     properties: {},
-    children: [],
+    children: [{
+        name: 'fxcm-styleguide',
+        properties: {
+          classId: 'FxcmStyleguideComponent'
+        }
+      }],
   };
 
   window.BB.startSingleApp(services)
