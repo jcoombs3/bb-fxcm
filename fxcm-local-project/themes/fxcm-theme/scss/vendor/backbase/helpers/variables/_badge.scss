@@ -1,0 +1,10 @@
+// Badges
+
+$badge-font-size:                   0.625rem;
+$badge-font-weight:                 $font-weight-normal;
+$badge-padding-y:                   .25rem;
+$badge-padding-x:                   .4rem;
+
+$badge-pill-padding-x:              0.3125rem;
+$badge-pill-width:                  $badge-font-size + ($badge-pill-padding-x * 2);
+$badge-pill-height:                 $badge-pill-width;

@@ -1,0 +1,115 @@
+@mixin toggle-sidebar-labels($show) {
+  .nav {
+    li.bb-universal-nav-header,
+    span.bb-universal-nav-item-title {
+      @if $show {
+        opacity: 1;
+      }
+      @else {
+        opacity: 0;
+      }
+    }
+    li.bb-universal-nav-divider {
+      @if $show {
+        visibility: hidden;
+      }
+      @else {
+        visibility: visible;
+      }
+    }
+  }
+}
+@mixin small-sidebar() {
+  .rb-sidebar {
+    @include toggle-sidebar-labels(false);
+
+    width: $sidebar-collapsed-width;
+    transform: translateX(0);
+  }
+  .main {
+    padding-left: $sidebar-collapsed-width + $gutter;
+  }
+  .sidebar-is-open {
+    .rb-sidebar {
+      @include toggle-sidebar-labels(true);
+
+      width: $sidebar-width;
+      transform: translateX(0);
+    }
+  }
+}
+
+.rb-sidebar {
+  &:not(.soy-template) { width: $sidebar-width; }
+
+  background-color: $dark-blue;
+  padding: $base-padding-height 0;
+  position: fixed;
+  height: calc(100vh - #{$navbar-top-height});
+  overflow-y: auto;
+
+  transition: mdc-animation-enter(width, $animation-sidebar-duration), mdc-animation-enter(transform, $animation-sidebar-duration);
+
+  z-index: 9;
+  top: $navbar-top-height;
+
+  .nav {
+    li.bb-universal-nav-header,
+    span.bb-universal-nav-item-title {
+      @include animation(opacity, $animation-sidebar-duration);
+
+      opacity: 0;
+    }
+    li.bb-universal-nav-divider {
+      height: 1px;
+      margin-top: $large-margin-height;
+      background-color: $sidebar-divider-color;
+    }
+  }
+}
+
+.main {
+  @include animation(padding, $animation-sidebar-duration);
+
+  top: $navbar-top-height;
+  padding-top: 0;
+  padding-left: $sidebar-width + $gutter;
+
+  .sticky-top-outline & {
+    top: 0;
+  }
+}
+
+// Large -- show full sidebar /w full labels
+@include media-breakpoint-up(lg) {
+  .rb-sidebar {
+    @include toggle-sidebar-labels(true);
+  }
+  .main {
+    padding-left: $sidebar-width + $gutter;
+  }
+
+  // this class is only applicable for large screens
+  .small-sidebar {
+    @include small-sidebar();
+  }
+}
+
+// Medium -- show compact mini sidebar /w icons-only on 'md' (and below)
+@include media-breakpoint-down(md) {
+  //do not apply breakpoint to soy version of sidebar
+  .rb-sidebar:not(.soy-template) {
+    @include small-sidebar();
+  }
+}
+
+// Small -- hides the sidebar completely on 'sm' (and below)
+@include media-breakpoint-down(sm) {
+  .rb-sidebar {
+    transform: translateX(-$sidebar-collapsed-width);
+  }
+  .main {
+    padding-left: $gutter;
+  }
+}
+

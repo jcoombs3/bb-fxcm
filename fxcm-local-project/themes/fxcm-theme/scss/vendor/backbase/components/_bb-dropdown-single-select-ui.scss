@@ -1,0 +1,21 @@
+.bb-dropdown-single-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  &::-ms-expand {
+    display: none;
+  }
+  &:disabled {
+    box-shadow: none;
+    border: none;
+    cursor: not-allowed;
+  }
+}
+
+.bb-dropdown-single-select-icon {
+  float: right;
+  margin-top: -35px;
+  pointer-events: none;
+}

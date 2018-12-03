@@ -1,0 +1,144 @@
+<section class="container">
+  <h1 class="h-main">FXCM Frontend Styleguide</h1>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Colors</h2>
+  <div class="card-deck">
+    <div class="card bg-fxcm-blue text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Blue (Primary)</h3>
+        <p class="card-text">$fxcm_blue: #0C51A2</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-cyan text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Cyan (Secondary)</h3>
+        <p class="card-text">$fxcm_cyan: #01ACB6;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-gold text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gold (Tertiary)</h3>
+        <p class="card-text">$fxcm_gold: #F4AD02;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-night text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Night</h3>
+        <p class="card-text">$fxcm_night: #283545;</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card bg-fxcm-gray text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gray</h3>
+        <p class="card-text">$fxcm_gray: #8B9BAC;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-gray-a text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gray A</h3>
+        <p class="card-text">$fxcm_gray_a: #888888;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-gray-b text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gray B</h3>
+        <p class="card-text">$fxcm_gray_b: #666666;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-white text-dark">
+      <div class="card-body">
+        <h3 class="card-title">FXCM White</h3>
+        <p class="card-text">$fxcm_white: #FFFFFF;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Headings</h2>
+  <p>We use classes to differentiate heading styles instead of uses elements like h1, h2, h3. <br> This way, a h1 element can be smaller than h2 at any time, but an accessibility reader will pick up the important targets.</p>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Heading Main</span></h3>
+        <p class="card-text">.h-main</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-secondary">Heading Secondary</span></h3>
+        <p class="card-text">.h-secondary</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-label">Heading Label</span></h3>
+        <p class="card-text">.h-label</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Font &amp; Typeface (Open Sans)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans">Open Sans Regular (Primary)</h3>
+        <p class="card-text">@include open_sans();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-italic">Open Sans Regular Italic</h3>
+        <p class="card-text">@include open_sans_italic();</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-light">Open Sans Light (Secondary)</h3>
+        <p class="card-text">@include open_sans_light();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-light-italic">Open Sans Light Italic</h3>
+        <p class="card-text">@include open_sans_light_italic();</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bold">Open Sans Bold</h3>
+        <p class="card-text">@include open_sans_bold();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bold-italic">Open Sans Bold Italic</h3>
+        <p class="card-text">@include open_sans_bold_italic();</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bolder">Open Sans Bolder</h3>
+        <p class="card-text">@include open_sans_bolder();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bolder-italic">Open Sans Bolder Italic</h3>
+        <p class="card-text">@include open_sans_bolder_italic();</p>
+      </div>
+    </div>
+  </div>
+</section>

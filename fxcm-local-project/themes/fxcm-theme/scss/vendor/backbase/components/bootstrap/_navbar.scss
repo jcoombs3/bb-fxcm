@@ -1,0 +1,47 @@
+.navbar-brand {
+  @extend .ml-3;
+}
+
+.navbar {
+  padding: 0;
+
+  .nav li.nav-item {
+    @include animation(border-color, 500ms);
+
+    & a {
+      @include animation(background-color, 500ms);
+
+      &:focus {
+        @include animation(background-color, 500ms);
+
+        background-color: $navigation-link-focus-bgcolor;
+      }
+
+      &:hover {
+        @include animation(background-color, 500ms);
+
+        background-color: $navigation-link-hover-bgcolor;
+      }
+    }
+
+    &:hover:not(.active) {
+      @include animation(border-color, 500ms);
+
+      border-color: $navigation-link-hover-bgcolor;
+    }
+
+    &:active:not(.active) {
+      @include animation(border-color, 500ms);
+
+      background-color: $navigation-link-active-bgcolor;
+    }
+
+    &.active {
+      border-color: $accent-blue;
+
+      a {
+        background-color: $navigation-link-active-bgcolor;
+      }
+    }
+  }
+}

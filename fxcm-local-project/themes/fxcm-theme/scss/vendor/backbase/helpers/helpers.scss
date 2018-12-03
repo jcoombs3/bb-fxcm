@@ -1,0 +1,7 @@
+//TODO: variables-legacy is 'Deprecation in Progress'
+//Gradually move to proper helpers/variables/variables.scss
+@import 'variables-legacy/variables-legacy';
+@import 'variables/variables';
+@import 'export';
+@import 'palette';
+@import 'mixins';

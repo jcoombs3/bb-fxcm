@@ -1,0 +1,15 @@
+.page-heading-primary, .ext-bus-headings-ng {
+  @extend .row;
+}
+
+.page-heading-primary {
+  background-color: $page-header-background-color;
+  margin-bottom: $base-padding-height;
+  align-items: flex-end;
+  min-height: $content-header-height;
+  padding-left: $base-padding-height;
+}
+
+.page-heading-wrapped .heading-wrapper {
+  @extend .px-2;
+}

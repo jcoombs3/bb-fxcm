@@ -1,0 +1,13 @@
+//ENTRY POINT: Component-based Styling Layer for Backbase Components styling (ui-bb-***)
+// Reserved for Singularly 'black-boxed' UI 
+
+//SECTION: General styling overrides of bootstrap
+@import 'bootstrap/bootstrap-components';
+
+//SECTION: reusable agnostic patterns
+//Reserved for generically functional backbase elements
+@import 'avatars';
+@import 'chart-tooltip';
+@import 'list-group-items';
+@import 'logos';
+@import 'md-icons';

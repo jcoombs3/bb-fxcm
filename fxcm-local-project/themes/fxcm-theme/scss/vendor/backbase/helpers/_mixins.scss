@@ -1,0 +1,25 @@
+// animation / motion
+@mixin animation($what, $speed: $animation-default-duration) {
+  transition: mdc-animation-enter($what, $speed);
+  transform-origin: 100% 0;
+}
+
+@mixin badge-outline-variant($color) {
+  color: $color;
+  border-color: $color;
+
+  &[href] {
+    @include hover-focus {
+      color: darken($color, 10%);
+      border-color: darken($color, 10%);
+      background-color: transparent;
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin ruler-background($color: $black) {
+  background-image: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 22'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg fill='#{$color}' fill-rule='nonzero'%3E%3Crect x='8' y='16' width='1' height='6'%3E%3C/rect%3E%3Crect x='19' y='16' width='1' height='6'%3E%3C/rect%3E%3Crect x='30' y='16' width='1' height='6'%3E%3C/rect%3E%3Crect x='41' y='0' width='1' height='22'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"), "#", "%23");
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}

@@ -10,6 +10,7 @@ import { BbFormsUiModule } from '@backbase/forms-ui-ang';
 import { AppComponent } from './app.component';
 import { customClassId } from './app.customClassId';
 import { environment } from '../environments/environment';
+import { FxcmStyleguideModule } from '@backbase/fxcm-styleguide';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { environment } from '../environments/environment';
       customClassId: customClassId
     }),
     BbFormsUiModule,
+    FxcmStyleguideModule,
   ],
   providers: [...environment.mockProviders],
   bootstrap: [AppComponent]

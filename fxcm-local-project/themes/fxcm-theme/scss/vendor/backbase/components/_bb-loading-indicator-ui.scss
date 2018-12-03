@@ -1,0 +1,59 @@
+.bb-loading-indicator {
+  width: 100px;
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+@each $label, $map in $loading-indicator-widths-map {
+  .bb-loading-indicator-#{$label} {
+    width: map-get($map, width);
+    .bb-loading-indicator-circle {
+      stroke-width: map-get($map, stroke-width);
+    }
+  }
+}
+
+.bb-loading-indicator-circle {
+  animation: rotate 2s linear infinite;
+  transform-origin: center center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.bb-loading-indicator-path {
+  animation: dash 1.5s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: $primary;
+  stroke-dasharray: 50;
+  stroke-dashoffset: 0;
+
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1%, 300%;
+      stroke-dashoffset: 0%;
+    }
+    50% {
+      stroke-dasharray: 180%, 300%;
+      stroke-dashoffset: -70%;
+    }
+    100% {
+      stroke-dasharray: 180%, 300%;
+      stroke-dashoffset: -248%;
+    }
+  }
+}
+
+button:not(.btn-link) .bb-loading-indicator-path {
+  stroke: $white;
+}

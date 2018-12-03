@@ -1,0 +1,21 @@
+// Pagination
+
+$pagination-color:                  $link-color;
+$pagination-bg:                     transparent;
+$pagination-border-width:           0;
+$pagination-border-color:           transparent;
+
+$pagination-hover-color:            $link-hover-color;
+$pagination-hover-bg:               map-get($theme-outline-hover-colors, "primary");
+$pagination-hover-border-color:     $pagination-hover-bg;
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              theme-color("primary");
+$pagination-active-border-color:    $pagination-active-bg;
+
+$pagination-disabled-color:         rgba(theme-color("secondary"), $btn-disabled-opacity);
+$pagination-disabled-bg:            transparent;
+$pagination-disabled-border-color:  $pagination-border-color;
+
+$pagination-nav-color:              theme-color("secondary");
+$pagination-nav-hover-bg:           map-get($theme-outline-hover-colors, "secondary");

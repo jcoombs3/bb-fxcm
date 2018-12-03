@@ -1,0 +1,28 @@
+.bicon {
+  @extend .material-icons;
+  @extend .bicon-md;
+}
+
+@each $bb-icon-name, $icon-name in $icon-map {
+  .bicon-#{$bb-icon-name}:before {
+    content: $icon-name;
+  }
+}
+
+@each $size-abbr, $size in $icon-size-map {
+  .bicon-#{$size-abbr} {
+    font-size: $size;
+  }
+}
+
+.bicon-arrow-in:before {
+  content: 'reply';
+  display: inline-block;
+  transform: rotateX(180deg)
+}
+
+.bicon-arrow-out:before {
+  content: 'reply';
+  display: inline-block;
+  transform: rotateY(180deg);
+}
