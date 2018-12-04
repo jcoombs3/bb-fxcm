@@ -1,0 +1,30 @@
+/**
+* FXCM Form Input
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663670
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-4-2018
+*
+* Changes from Design:
+* - None
+*/
+
+.form-group {
+  
+  input.form-control:not(:last-child) {
+    border-right: none;
+    
+    &:not(:focus), &:not(:focus) {
+      box-shadow: none;
+    }
+    
+    &.is-valid:focus {
+      border-right: 1px solid theme-color("success");
+    }
+    
+    &.is-invalid:focus {
+      border-right: 1px solid theme-color("invalid");
+    }
+  }
+}

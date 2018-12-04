@@ -1,0 +1,78 @@
+/**
+* FXCM Form Global
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663670
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-4-2018
+*
+* Changes from Design:
+* - None
+*/
+
+$bb_input_prepend_width: 35px;
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  @include open_sans_light();
+  font-style: normal !important;
+  color: $fxcm_gray_a;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  @include open_sans_light();
+  font-style: normal !important;
+  color: $fxcm_gray_a;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  @include open_sans_light();
+  font-style: normal !important;
+  color: $fxcm_gray_a;
+}
+:-moz-placeholder { /* Firefox 18- */
+  @include open_sans_light();
+  font-style: normal !important;
+  color: $fxcm_gray_a;
+}
+
+.form-group {
+  
+  .form-control {
+    border-color: $fxcm_form_input_border;
+  }
+  
+  label {
+    @include h_label();
+  }
+  
+  .input-group-prepend .input-group-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $bb_input_prepend_width;
+    padding: 0;
+    background: $white;
+    
+    input {
+      margin: 0 auto;
+    }
+  }
+  
+  .input-group-append .input-group-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $white;
+    width: $bb_input_prepend_width;
+    padding: 0;
+    
+    &:after { // TODO: make this an icon
+      content: "";
+      width: 5px; 
+      height: 10px; 
+      border: solid $fxcm_blue;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg); 
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); 
+    }
+  }
+}

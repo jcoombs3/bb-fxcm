@@ -10,10 +10,7 @@ export function customClassId(name: string, properties: FormItemProperties): str
   }
   
   if (properties.classId === 'BbFormInputTextComponent') {
-    const props: FormItemField = properties as FormItemField;
-    if (props.dataType === 'text') { // password || email !== 'text'
-      return 'FxcmFormInputTextComponent';
-    }
+    return 'FxcmFormInputTextComponent';
   }
  
   return properties.classId;  // Always return the existing classId if you are not changing it

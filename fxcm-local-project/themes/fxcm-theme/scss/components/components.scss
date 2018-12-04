@@ -1,9 +1,14 @@
-//ENTRY POINT: Specific Components Styling Layer
+/**
+* FXCM Form Custom Components
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-4-2018
+*
+* Changes from Design:
+* - None
+*/
 
-//CHECKPOINT: Does scope of style belong here or in components styling? Answer following:
-//Case #1: The style only applies to the components WITHIN a specific extension. --> STOP. Please go to 'templates' styles.
-//Case #2: The style only applies to the UI component, REGARDLESS of which extension is applied. --> Proceed with 'components'.
-
-//Example: @import 'ui-bb-my-dropdown-ng';
-
+@import 'bb-forms-ui-global';
 @import 'bb-forms-ui-button-ang';
+@import 'bb-forms-ui-input-text-ang';
