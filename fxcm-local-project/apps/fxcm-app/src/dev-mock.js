@@ -23,21 +23,21 @@ window.document.addEventListener('DOMContentLoaded', () => {
     name: 'bb-fxcm-app-ang',
     properties: {},
     children: [
-      {
-        name: 'styleguide',
-        properties: {
-          classId: 'FxcmStyleguideComponent'
-        }
-      },
 //      {
-//        name: 'my-forms-container',
+//        name: 'styleguide',
 //        properties: {
-//          classId: 'BbFormsContainerComponent',
-//          formId: '',
-//          apiRoot: '',
-//        },
-//        children: [createFormModel()],
+//          classId: 'FxcmStyleguideComponent'
+//        }
 //      },
+      {
+        name: 'my-forms-container',
+        properties: {
+          classId: 'BbFormsContainerComponent',
+          formId: '',
+          apiRoot: '',
+        },
+        children: [createFormModel()],
+      },
     ],
   };
 
