@@ -1,0 +1,19 @@
+<div *ngIf="model?.properties | async; let props;"
+     bbFormUi [change]="change"
+     class="form-group {{props.cssClassValue}}">
+  <label [for]="model.name">{{props.label}}</label>
+  <input
+    #formItem
+    class="form-control"
+    [ngClass]="{'is-valid': props.isValid && props.value, 'is-invalid': !props.isValid }"
+    [id]="model.name"
+    type="{{props.dataType === 'password' || props.dataType === 'email' ? props.dataType : 'text'}}"
+    [value]="props.value"
+    [disabled]="props.disabled"
+    [readOnly]="props.readonly"
+    [placeholder]="props.placeholder"
+    (blur)="onChange(formItem.value)"
+    (maxlength)="props.maxLength"/>
+  <small *ngIf="props.helpText" class="form-text text-muted">{{props.helpText}}</small>
+  <bb-forms-inline-error-ang [messages]="props.messages.errors"></bb-forms-inline-error-ang>
+</div>
