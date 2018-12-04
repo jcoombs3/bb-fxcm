@@ -1,20 +1,9 @@
 <section class="container">
   <h1 class="h-main">FXCM Frontend Styleguide</h1>
-  <p>Last Updated: v1.0.1 Dec-4 2018</p>
-  <p>Newest Update: Input Password</p>
-</section>
-
-<section class="container">
-  <h2 class="styleguide-section-title h-secondary">Input (Password)</h2>
-  <div class="card-deck">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title"><span class="h-main">Default</span></h3>
-        <div class="card-ui">
-           Default
-        </div>
-      </div>
-    </div>
+  <div>
+    <strong>Last Update</strong>: v1.0.1 Dec-4 2018 
+    <br/>
+    <strong>Latest Content Update</strong>: Input Text
   </div>
 </section>
 
@@ -180,7 +169,7 @@
            <button class="btn btn-primary">Button</button>
         </div>
         <p class="card-text">.btn .btn-primary <span class="text-danger">(default)</span></p>
-        <p class="form-text">cssClassValue="btn-primary"</p>
+        <p class="forms-model">cssClassValue="btn-primary"</p>
         <p class="text-danger">How is the icon passed into button?</p>
       </div>
     </div>
@@ -191,7 +180,7 @@
            <button class="btn btn-secondary">Button</button>
         </div>
         <p class="card-text">.btn .btn-secondary</p>
-        <p class="form-text">cssClassValue="btn-secondary"</p>
+        <p class="forms-model">cssClassValue="btn-secondary"</p>
       </div>
     </div>
     <div class="card">
@@ -201,7 +190,241 @@
            <button class="btn btn-outline-primary">Button</button>
         </div>
         <p class="card-text">.btn .btn-outline-primary</p>
-        <p class="form-text">cssClassValue="btn-outline-primary"</p>
+        <p class="forms-model">cssClassValue="btn-outline-primary"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Input (Text)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="text" value="lorem ipsum" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="text" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Input (Password)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="password" value="lorem ipsum" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="password" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Input (Email)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
       </div>
     </div>
   </div>
