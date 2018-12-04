@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fxcm-styleguide.component.scss']
 })
 export class FxcmStyleguideComponent implements OnInit {
+  errors = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"];
 
   constructor() { }
 

@@ -6,21 +6,36 @@ function createFormModel() {
     },
     children: [
       {
-        name: 'P0-B0',
+        name: 'P0-C0',
         properties: {
-          classId: 'BbFormButtonComponent',
-          label: `I'm a button!`,
-          color: 'warning',
-          cssClassValue: 'btn-outline-primary'
+          classId: 'BbFormFieldsetContainerComponent',
+          label: 'Form UI Elements',
         },
-      },
-      {
-        name: 'P0-B1',
-        properties: {
-          classId: 'BbFormButtonComponent',
-          label: `I'm a disabled button!`,
-          disabled: true,
-        },
+        children: [
+          {
+            name: 'P0-C0-F0',
+            properties: {
+              classId: 'FxcmFormInputTextComponent',
+              label: 'Text Component',
+              dataType: 'text',
+              value: 'value',
+              placeholder: 'Placeholder',
+              helpText: '',
+              required: true,
+              disabled: false,
+              readonly: false,
+              multiValued: false,
+              messages: {
+                errors: [],
+                warnings: []
+              },
+              validations: [],
+              isValid: true,
+              cssClassValue: '',
+              options: [],
+            },
+          }
+        ],
       },
     ],
   };
