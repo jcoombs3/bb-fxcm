@@ -3,7 +3,7 @@
   <div>
     <strong>Last Update</strong>: v1.0.1 Dec-4 2018 
     <br/>
-    <strong>Latest Content Update</strong>: Input Text
+    <strong>Latest Content Update</strong>: Flag Selector Dropdown
   </div>
 </section>
 
@@ -214,6 +214,36 @@
     </div>
     <div class="card">
       <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>s
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
         <h3 class="card-title"><span class="h-main">Valid</span></h3>
         <div class="card-ui">
           <div class="form-group">
@@ -241,32 +271,28 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="card-deck">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
         <div class="card-ui">
           <div class="form-group">
             <label>Placeholder</label>
             <div class="input-group">
-              <input #formItem class="form-control" type="text" value="" placeholder="Placeholder" />
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" disabled />
             </div>
-            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
           </div>
         </div>
       </div>
     </div>
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <h3 class="card-title"><span class="h-main">Readonly</span></h3>
         <div class="card-ui">
           <div class="form-group">
             <label>Placeholder</label>
             <div class="input-group">
-              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" />
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" readonly />
             </div>
-            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
           </div>
         </div>
       </div>
@@ -290,37 +316,6 @@
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title"><span class="h-main">Valid</span></h3>
-        <div class="card-ui">
-          <div class="form-group">
-            <label>Placeholder</label>
-            <div class="input-group">
-              <input #formItem class="form-control is-valid" type="password" value="lorem ipsum" placeholder="Placeholder" />
-              <div class="input-group-append">
-                <div class="input-group-text"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
-        <div class="card-ui">
-          <div class="form-group">
-            <label>Placeholder</label>
-            <div class="input-group">
-              <input #formItem class="form-control is-invalid" type="password" value="lorem ipsum" placeholder="Placeholder" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="card-deck">
     <div class="card">
       <div class="card-body">
         <h3 class="card-title"><span class="h-main">Help Text</span></h3>
@@ -350,6 +345,63 @@
       </div>
     </div>
   </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="password" value="lorem ipsum" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="password" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="lorem ipsum" placeholder="Placeholder" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Readonly</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="lorem ipsum" placeholder="Placeholder" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="container">
@@ -368,6 +420,36 @@
         </div>
       </div>
     </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
     <div class="card">
       <div class="card-body">
         <h3 class="card-title"><span class="h-main">Valid</span></h3>
@@ -397,19 +479,128 @@
         </div>
       </div>
     </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Readonly</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Select Dropdowns</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control" value="">
+              <option value="" disabled="disabled">Placeholder</option>
+              <option value="lorem">Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control is-valid" value="lorem">
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control is-invalid" value="lorem">
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
   </div>
   <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control" value="lorem" disabled>
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
     <div class="card">
       <div class="card-body">
         <h3 class="card-title"><span class="h-main">Help Text</span></h3>
         <div class="card-ui">
           <div class="form-group">
             <label>Placeholder</label>
-            <div class="input-group">
-              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" />
-            </div>
+            <select #formItem class="form-control" value="">
+              <option value="" disabled="disabled">Placeholder</option>
+              <option value="lorem">Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
             <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
-          </div>
+          </div>    
         </div>
       </div>
     </div>
@@ -419,11 +610,176 @@
         <div class="card-ui">
           <div class="form-group">
             <label>Placeholder</label>
+            <select #formItem class="form-control is-invalid" value="lorem">
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Language (Flag) Dropdown</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
             <div class="input-group">
-              <input #formItem class="form-control" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control is-valid" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control is-invalid" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="lorem" disabled>
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
             </div>
             <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
-          </div>
+          </div>   
         </div>
       </div>
     </div>
