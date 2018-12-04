@@ -9,6 +9,7 @@ import { BbFormsDirectivesModule } from '@backbase/forms-directives-ang';
 // Components
 import { FxcmFormButtonComponent } from './components/fxcm-form-button/fxcm-form-button.component';
 import { FxcmFormInputTextComponent } from './components/fxcm-form-input-text/fxcm-form-input-text.component';
+import { FxcmFormFlagSelectorComponent } from './components/fxcm-form-flag-selector/fxcm-form-flag-selector.component';
 
 @NgModule({
   imports: [
@@ -18,13 +19,15 @@ import { FxcmFormInputTextComponent } from './components/fxcm-form-input-text/fx
     BackbaseCoreModule.withConfig({
       classMap: {
         FxcmFormButtonComponent,
-        FxcmFormInputTextComponent
+        FxcmFormInputTextComponent,
+        FxcmFormFlagSelectorComponent
       },
     }),
   ],
   declarations: [
     FxcmFormButtonComponent,
-    FxcmFormInputTextComponent
+    FxcmFormInputTextComponent,
+    FxcmFormFlagSelectorComponent
   ]
 })
 export class FxcmCustomUiModule { }

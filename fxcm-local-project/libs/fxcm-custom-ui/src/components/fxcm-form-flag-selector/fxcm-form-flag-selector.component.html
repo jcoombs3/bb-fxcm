@@ -1,0 +1,16 @@
+<div *ngIf="model?.properties | async; let props" class="form-group bb-flag-selector {{props.cssClassValue}}" bbFormUi [change]="change">
+  <label [for]="model.name">{{props.label}}</label>
+  <div class="input-group">
+    <div class="input-group-prepend" *ngIf="props.value">
+      <div class="input-group-text">
+        <span class="bb-flag {{props.value ? 'bb-flag-' + props.value : ''}}"></span>
+      </div>
+    </div>
+    <select #formItem class="form-control" [ngClass]="{'is-valid': props.isValid && props.value, 'is-invalid': !props.isValid }" [id]="model.name" [value]="props.value" [disabled]="props.disabled" (blur)="onChange(formItem.value)">
+        <option value="" disabled="disabled">Please select an option</option>
+        <option *ngFor="let option of props.options" [value]="option.value" [selected]="option.selected">{{option.label}}</option>
+      </select>
+  </div>
+  <small *ngIf="props.helpText" class="form-text text-muted">{{props.helpText}}</small>
+  <bb-forms-inline-error-ang [messages]="props.messages.errors"></bb-forms-inline-error-ang>
+</div>

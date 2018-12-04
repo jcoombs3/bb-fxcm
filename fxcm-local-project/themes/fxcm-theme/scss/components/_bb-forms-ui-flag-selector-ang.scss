@@ -1,0 +1,39 @@
+/**
+* FXCM Form Flag Selector
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663670
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-4-2018
+*
+* Changes from Design:
+* - None
+*/
+
+$flag_width: 2rem;
+$assets_path: '../assets/images/flags/png/';
+
+@mixin bb_flag_image($flag) {
+  width: $flag_width;
+  height: 100%;
+  background: url(#{$assets_path}#{$flag}) no-repeat 50% 50%;
+  background-size: 100%;
+}
+
+.form-group.bb-flag-selector {
+  
+  .input-group-prepend .input-group-text {
+    padding: 0px 0.375rem 0px 0.75rem;
+    width: auto;
+  }
+  
+  .form-control {
+    padding-left: 0.375rem;
+  }
+}
+
+.bb-flag-001-ethiopia { @include bb_flag_image('001-ethiopia.png'); }
+.bb-flag-002-oman { @include bb_flag_image('002-oman.png'); }
+.bb-flag-003-tanzania { @include bb_flag_image('003-tanzania.png'); }
+.bb-flag-004-slovenia { @include bb_flag_image('004-slovenia.png'); }
+.bb-flag-005-puerto-rico { @include bb_flag_image('005-puerto-rico.png'); }
