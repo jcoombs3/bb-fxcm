@@ -1,0 +1,90 @@
+
+.dropdown-menu.modal.in,
+.dropdown-menu.show,
+.dropdown {
+	.bicon-toggle-down,
+	.fa-chevron-down {
+		transform: rotate3d(1, 0, 0, 0deg);
+		transition: transform $animation-dropdown-menu-duration $mdc-animation-deceleration-curve-timing-function;
+  }
+
+  &.open {
+    .dropdown-menu {
+      @include animation(transform, $animation-dropdown-menu-duration);
+
+      transform: scale(1);
+    }
+
+    .bicon-toggle-down,
+		.fa-chevron-down {
+      transform: rotate3d(1, 0, 0, 180deg);
+      transition: transform $animation-dropdown-menu-duration $mdc-animation-deceleration-curve-timing-function;
+    }
+  }
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: $blue-100;
+  }
+
+  .dropdown-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:after {
+      @include invisible(hidden);
+      @extend .bicon;
+      @extend .text-success;
+      @extend .ml-3;
+      content: 'check_circle';
+    }
+  }
+
+  &.active {
+    .dropdown-item-content:after {
+      @include invisible(visible);
+    }
+  }
+}
+
+// Override caret icon
+.dropup {
+  .dropdown-toggle {
+    @extend .bicon;
+    @extend .bicon-toggle-up;
+    &:after {
+      @extend .d-none;
+    }
+  }
+}
+
+.rb-navbar-top, .rb-sidebar {
+	.dropdown-menu {
+		@include animation(transform, $animation-dropdown-menu-duration);
+		transform: scale(0);
+		display: inline-block;
+		width: 100%;
+		font-size: $font-size-base;
+		border: none;
+		box-shadow: $box-shadow-2;
+
+		.dropdown-header {
+			font-size: $font-size-base;
+			padding: $tiny-padding-height $small-padding-height;
+		}
+
+    .dropdown-option {
+      a {
+        width: 100%;
+        display: inline-block;
+        padding: $tiny-padding-height $small-padding-height;
+        color: $black;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

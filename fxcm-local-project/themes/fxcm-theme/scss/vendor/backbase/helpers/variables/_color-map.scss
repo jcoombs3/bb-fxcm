@@ -1,0 +1,34 @@
+//
+// Plain Color Variables
+// -- Abstracted color variables from base/colors (2nd degree)
+
+$primary:      $blue;
+$secondary:    $gray-600;
+$success:      $green;
+$info:         $cyan;
+$warning:      $yellow;
+$danger:       $red;
+$light:        $gray-light;
+$dark:         $slate;
+
+$theme-colors: (
+  "primary":   $primary,
+  "secondary": $secondary,
+  "success":   $success,
+  "info":      $info,
+  "warning":   $warning,
+  "danger":    $danger,
+  "light":     $light,
+  "dark":      $dark
+);
+
+$theme-outline-hover-colors: (
+  "primary":   $blue-050,
+  "secondary": $gray-050,
+  "success":   $green-050,
+  "info":      $cyan-050,
+  "warning":   $yellow-050,
+  "danger":    $red-050,
+  "light":     $gray-light-050,
+  "dark":      $slate-050
+);

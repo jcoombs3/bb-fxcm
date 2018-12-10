@@ -1,0 +1,22 @@
+bb-message-ui {
+  &.ng-invalid.ng-touched .form-control {
+    border-color: $red;
+  }
+
+  //div[contenteditable=true]
+  .message-content {
+    height: $bb-message-ui-content-height;
+    outline: 0;
+    overflow-y: auto;
+
+    //Placeholder
+    &[contenteditable=true]:empty:before {
+      color: $input-placeholder-color;
+      font-style: italic;
+
+      content: attr(placeholder);
+      display: block; /* For Firefox */
+    }
+  }
+}
+

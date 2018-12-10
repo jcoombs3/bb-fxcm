@@ -1,0 +1,127 @@
+.ext-bb-notification-badge-ng {
+  line-height: $navbar-top-height;
+
+  .notification {
+    // Set lighter color for notifications icon
+    &-badge-btn-bell {
+      color: $black-a24;
+    }
+
+    &-list-item {
+      &:hover .notification {
+        background-color: $black-a4;
+      }
+
+      &:hover .notification-unread {
+        background-color: $accent-blue-a18;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-panel-header {
+      align-items: center;
+      height: 41px;
+      padding: 0 $tiny-padding-height;
+      border-color: $black-a12;
+
+      .pointer {
+        font-size: 24px;
+      }
+    }
+
+    .message {
+      color: $black-a60;
+    }
+
+    &-title {
+      color: $black;
+    }
+
+    &-arrow {
+      display: none;
+    }
+
+    &-panel-footer {
+      border: none;
+      padding: $base-padding-height $tiny-padding-height;
+    }
+
+    &-panel-title a span {
+      font-size: $font-size-base;
+    }
+
+    &-panel-header,
+    &-panel-footer {
+      background-color: transparent;
+    }
+
+    &-date {
+      font-size: $font-size-base;
+    }
+
+    &-badge-popover,
+    &-badge-popover .card {
+      border: none;
+      box-shadow: $box-shadow-2;
+    }
+
+    &-level {
+      position: relative;
+      font-size: 16px;
+    }
+
+    &-unread {
+      background-color: $accent-blue-a12;
+    }
+
+    &-badge-btn {
+      &:focus, &:active, &:active:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      &.items {
+        &:hover:after {
+          background-color: $accent-blue-a12;
+        }
+
+        &:focus:after, &:active:after, &:active:focus:after {
+          background-color: $accent-blue-a18;
+        }
+
+        > i {
+          color: $blue;
+        }
+      }
+
+      &-dot {
+        background-color: $red;
+        top: -5px;
+        right: -5px;
+        font-size: 0.650rem;
+      }
+    }
+
+    &-panel-header {
+      & > a.btn-link {
+        padding: 3px 10px;
+        font-size: $small-font-size;
+        & > i {
+          margin-right: -3px;
+          margin-left: -8px;
+        }
+
+        & > span, & > i {
+          color: $btn-link-color;
+        }
+      }
+
+      .card-title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

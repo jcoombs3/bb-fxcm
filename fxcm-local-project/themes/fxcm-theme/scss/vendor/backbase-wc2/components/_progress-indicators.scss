@@ -1,0 +1,63 @@
+/**
+ * @description
+ * Component for rendering css only progress indicator
+ *
+ * @example
+ * <div class="progress-indicator donut rotate-anticlockwise"
+ *  <div class="donut-left-slice"></div>
+ *
+ *  <div class="donut-right-slice"></div>
+ *
+ *  <div class="progress-indicator-donut-overlay"></div>
+ * </div>
+ */
+
+// @TODO: This include should be backported to whitelabel theme
+@include generate-positive-rotation-classes(0, 180);
+
+.progress-indicator {
+  &.donut {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: $gray-050;
+    margin: 0 auto;
+
+    // @TODO: These left and right slice definitions should be backported to whitelabel theme
+    .donut-left-slice {
+      right: 0;
+      transform-origin: center left;
+      z-index: 1;
+    }
+
+    .donut-right-slice {
+      left: 0;
+      transform-origin: center right;
+      z-index: 2;
+    }
+
+    .donut-upper-slice {
+      z-index: 3;
+    }
+
+    &.rotate-anticlockwise {
+      .donut-left-slice {
+        left: 0;
+        right: auto;
+        z-index: 2;
+        transform-origin: center right;
+      }
+
+      .donut-right-slice {
+        right: 0;
+        left: auto;
+        z-index: 1;
+        transform-origin: center left;
+      }
+
+      .donut-upper-slice {
+        z-index: 3;
+      }
+    }
+  }
+}
+ 

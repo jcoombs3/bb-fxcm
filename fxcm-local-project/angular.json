@@ -51,7 +51,9 @@
               "apps/fxcm-app/src/favicon.ico",
               "apps/fxcm-app/src/assets"
             ],
-            "styles": [],
+            "styles": [
+              "themes/fxcm-theme/scss/main.scss"
+            ],
             "scripts": [
               "apps/fxcm-app/src/dev-mock.js"
             ]
@@ -133,6 +135,44 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/fxcm-app-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "fxcm-styleguide": {
+      "root": "libs/fxcm-styleguide",
+      "sourceRoot": "libs/fxcm-styleguide/src",
+      "projectType": "library",
+      "prefix": "bb",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/fxcm-styleguide/**/*.ts"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "fxcm-custom-ui": {
+      "root": "libs/fxcm-custom-ui",
+      "sourceRoot": "libs/fxcm-custom-ui/src",
+      "projectType": "library",
+      "prefix": "bb",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/fxcm-custom-ui/**/*.ts"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

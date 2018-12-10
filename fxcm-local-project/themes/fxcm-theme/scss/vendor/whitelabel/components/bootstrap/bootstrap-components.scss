@@ -1,0 +1,21 @@
+//This file handles: 
+// * Sass partials that output actual CSS are handled here
+// * Do not define any new sass helpers here
+
+//SECTION: Bootstrap 4 Class Overrides
+//BS4 specific classes (not variable overrides!)
+
+//First, apply resets
+@import 'reset';
+
+//After, apply remaining styling
+@import 'badges';
+@import 'buttons';
+@import 'cards';
+@import 'dropdowns';
+@import 'forms';
+@import 'lists';
+@import 'nav-tabs';
+@import 'navbar';
+@import 'tables';
+@import 'typography';

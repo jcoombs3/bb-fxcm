@@ -1,0 +1,24 @@
+.chart-donut {
+  max-width: $chart-donut-max-width;
+
+  &.chart-donut-container-inflated {
+    min-height: $chart-donut-max-width;
+  }
+}
+
+.chart-donut-large {
+  max-width: $chart-donut-large-max-width;
+
+  &.chart-donut-container-inflated {
+    min-height: $chart-donut-large-max-width;
+  }
+}
+
+.chart-donut-slice-icon {
+  font-size: $chart-donut-slice-icon-font-size;
+  line-height: $chart-donut-slice-icon-line-height;
+}
+
+.chart-donut-slice-amount {
+  font-size: $chart-donut-slice-amount-font-size;
+}

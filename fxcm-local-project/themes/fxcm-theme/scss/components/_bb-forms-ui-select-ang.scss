@@ -1,0 +1,51 @@
+/**
+* FXCM Form Select
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663673
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   11-30-2018
+*
+* Changes from Design:
+* - None
+*/
+
+@mixin fxcm_select_arrow {
+  background: $white url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%230C51A2' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  background-size: 10px 12px;
+}
+@mixin fxcm_select_arrow_disabled {
+  background: $white url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23888888' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  background-size: 10px 12px;
+}
+
+.form-group {
+  
+  select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: inherit;
+    @include fxcm_select_arrow();
+    
+    &:disabled {
+      @include fxcm_select_arrow_disabled();
+    }
+  }
+  
+  .input-group select.form-control:not(:first-child) {
+    border-left: none;
+    
+    &:not(:focus), &:not(:focus) {
+      box-shadow: none;
+    }
+    
+    &.is-valid:focus {
+      border-left: 1px solid theme-color("success");
+    }
+    
+    &.is-invalid:focus {
+      border-left: 1px solid theme-color("invalid");
+    }
+  }
+}

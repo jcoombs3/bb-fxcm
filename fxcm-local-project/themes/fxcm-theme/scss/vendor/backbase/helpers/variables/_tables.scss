@@ -1,0 +1,10 @@
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+$table-accent-bg:                   rgba($black, .02);
+$table-hover-bg:                    $cyan-100;
+$table-active-bg:                   $table-hover-bg;
+
+$table-border-color:                rgba($black, .1);
+
+$table-font-size:                   $font-size-base * .9;

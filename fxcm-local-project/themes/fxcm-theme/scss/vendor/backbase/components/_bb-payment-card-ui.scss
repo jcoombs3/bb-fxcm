@@ -1,0 +1,50 @@
+.bb-payment-card {
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  background-size: contain;
+  background-image: url(#{$path-to-images}/bb-payment-card-ui/payment-card-default.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: $payment-card-max-width;
+
+  .bb-payment-card-container {
+    padding-top: $payment-card-aspect-ratio * 100%;
+  }
+
+  .bb-payment-card-logo {
+    position: absolute;
+    top: $payment-card-logo-top;
+    left: $payment-card-logo-left;
+    width: $payment-card-logo-width;
+  }
+
+  .bb-payment-card-vendor {
+    position: absolute;
+    right: $payment-card-vendor-right;
+    bottom: $payment-card-vendor-bottom;
+    width: $payment-card-vendor-width;
+  }
+
+  .bb-payment-card-number {
+    position: absolute;
+    top: $payment-card-number-top;
+    left: $payment-card-number-left;
+    color: white;
+    font-size: 1.25rem;
+  }
+
+  .bb-payment-card-name {
+    position: absolute;
+    top: $payment-card-name-top;
+    left: $payment-card-name-left;
+    color: white;
+  }
+
+  .bb-payment-card-expiration-date {
+    position: absolute;
+    bottom: $payment-card-expiration-date-bottom;
+    left: $payment-card-expiration-date-left;
+    color: white;
+  }
+}

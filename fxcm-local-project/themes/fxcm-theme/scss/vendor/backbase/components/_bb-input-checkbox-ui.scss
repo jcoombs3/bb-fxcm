@@ -1,0 +1,55 @@
+.bb-input-checkbox {
+  opacity: 0;
+  &:checked + label {
+    &::before {
+      border-color: $primary;
+    }
+    &::after {
+      @extend .material-icons;
+      content: "check";
+      font-weight: bold;
+      background-color: $primary;
+      color: $white;
+    }
+    bb-input-checkbox-ui > &::after {
+      font-size: 1em;
+    }
+  }
+  &:disabled + label {
+    cursor: not-allowed;
+    &::before {
+      border: none;
+      background-color: $light;
+      cursor: not-allowed;
+    }
+    &::after {
+      cursor: not-allowed;
+      background-color: $light;
+      color: $secondary;
+    }
+  }
+  &:focus + label::before {
+    outline: $primary auto $checkbox-outline;
+  }
+  &:hover + label::before {
+    background-color: $light;
+  }
+  + label {
+    cursor: pointer;
+    padding-left: calc(1em + 8px);
+    &::before {
+      border: 1px solid $gray-800;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(50% - 0.5em);
+      left: 0;
+      height: 1em;
+      width: 1em;
+    }
+  }
+}

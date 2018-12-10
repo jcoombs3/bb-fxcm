@@ -1,0 +1,37 @@
+.btn-group {
+  > .btn:not(:first-child),
+  > .btn-group:not(:first-child) > .btn {
+    border-left: $dropdown-toggle-border;
+  }
+}
+
+.btn-group-toggle {
+  display: inline-flex;
+
+  > .btn {
+    &:first-child {
+      @include border-left-radius($btn-border-radius);
+    }
+
+    &:not(:first-child) {
+      border-left: none;
+    }
+
+    &:last-child {
+      @include border-right-radius($btn-border-radius);
+    }
+
+    &.btn-secondary {
+      border: $btn-outline-border-width solid $secondary;
+
+      &:not(.active) {
+        background-color: $white;
+        color: $secondary;
+      }
+    }
+
+    &:not(:focus) {
+      box-shadow: none;
+    }
+  }
+}

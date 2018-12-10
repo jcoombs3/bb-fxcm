@@ -1,0 +1,24 @@
+//
+// Basic Bootstrap table
+//
+
+.table {
+  font-size: $table-font-size;
+  border-top: $table-border-width solid $table-border-color;
+
+  th,
+  td {
+    vertical-align: middle;
+    border-top: none;
+    border-bottom: $table-border-width solid $table-border-color;
+  }
+
+  thead th {
+    padding-top: 2 * $table-cell-padding;
+    border-bottom: $table-border-width solid $table-border-color;
+  }
+}
+
+.table-responsive-clipping-off {
+  overflow: visible;
+}

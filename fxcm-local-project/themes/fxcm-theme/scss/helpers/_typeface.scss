@@ -1,0 +1,45 @@
+@mixin open_sans {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+}
+@mixin open_sans_italic {
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+@mixin open_sans_light {
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+}
+@mixin open_sans_light_italic {
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+@mixin open_sans_bold {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+}
+@mixin open_sans_bold_italic {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+@mixin open_sans_bolder {
+  font-family: $font-family-sans-serif;
+  font-weight: 800;
+}
+@mixin open_sans_bolder_italic {
+  font-family: $font-family-sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.typeface-open-sans { @include open_sans(); }
+.typeface-open-sans-italic { @include open_sans_italic(); }
+.typeface-open-sans-light { @include open_sans_light(); }
+.typeface-open-sans-light-italic { @include open_sans_light_italic(); }
+.typeface-open-sans-bold { @include open_sans_bold(); }
+.typeface-open-sans-bold-italic { @include open_sans_bold_italic(); }
+.typeface-open-sans-bolder { @include open_sans_bolder(); }
+.typeface-open-sans-bolder-italic { @include open_sans_bolder_italic(); }

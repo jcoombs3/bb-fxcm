@@ -1,0 +1,5 @@
+@include media-breakpoint-down(sm) {
+    .set-locale-widget .dropdown-menu {
+        min-width: 0 !important;
+    }
+}

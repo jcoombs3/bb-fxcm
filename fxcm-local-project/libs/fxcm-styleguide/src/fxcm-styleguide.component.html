@@ -1,0 +1,813 @@
+<section class="container">
+  <h1 class="h-main">FXCM Frontend Styleguide</h1>
+  <div>
+    <strong>Last Update</strong>: v1.0.1 Dec-4 2018 
+    <br/>
+    <strong>Latest Content Update</strong>: Flag Selector Dropdown
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Colors</h2>
+  <div class="card-deck">
+    <div class="card bg-fxcm-blue text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Blue (Primary)</h3>
+        <p class="card-text">$fxcm_blue: #0C51A2</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-cyan text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Cyan (Secondary)</h3>
+        <p class="card-text">$fxcm_cyan: #01ACB6;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-gold text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gold (Tertiary)</h3>
+        <p class="card-text">$fxcm_gold: #F4AD02;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-night text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Night</h3>
+        <p class="card-text">$fxcm_night: #283545;</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card bg-fxcm-gray text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gray</h3>
+        <p class="card-text">$fxcm_gray: #8B9BAC;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-gray-a text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gray A</h3>
+        <p class="card-text">$fxcm_gray_a: #888888;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-gray-b text-white">
+      <div class="card-body">
+        <h3 class="card-title">FXCM Gray B</h3>
+        <p class="card-text">$fxcm_gray_b: #666666;</p>
+      </div>
+    </div>
+    <div class="card bg-fxcm-white text-dark">
+      <div class="card-body">
+        <h3 class="card-title">FXCM White</h3>
+        <p class="card-text">$fxcm_white: #FFFFFF;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Headings</h2>
+  <p>We use classes to differentiate heading styles instead of uses elements like h1, h2, h3. <br> This way, a h1 element can be smaller than h2 at any time, but an accessibility reader will pick up the important targets.</p>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Heading Main</span></h3>
+        <p class="card-text">.h-main</p>
+        <p class="card-text">@include h_main();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-secondary">Heading Secondary</span></h3>
+        <p class="card-text">.h-secondary</p>
+        <p class="card-text">@include h_secondary();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-label">Heading Label</span></h3>
+        <p class="card-text">.h-label</p>
+        <p class="card-text">@include h_label();</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Font &amp; Typeface (Open Sans)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans">Open Sans Regular (Primary)</h3>
+        <p class="card-text">.typeface-open-sans</p>
+        <p class="card-text">@include open_sans();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-italic">Open Sans Regular Italic</h3>
+        <p class="card-text">.typeface-open-sans-italic</p>
+        <p class="card-text">@include open_sans_italic();</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-light">Open Sans Light (Secondary)</h3>
+        <p class="card-text">.typeface-open-sans-light</p>
+        <p class="card-text">@include open_sans_light();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-light-italic">Open Sans Light Italic</h3>
+        <p class="card-text">.typeface-open-sans-light-italic</p>
+        <p class="card-text">@include open_sans_light_italic();</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bold">Open Sans Bold</h3>
+        <p class="card-text">.typeface-open-sans-bold</p>
+        <p class="card-text">@include open_sans_bold();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bold-italic">Open Sans Bold Italic</h3>
+        <p class="card-text">.typeface-open-sans-bold-italic</p>
+        <p class="card-text">@include open_sans_bold_italic();</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bolder">Open Sans Bolder</h3>
+        <p class="card-text">.typeface-open-sans-bolder</p>
+        <p class="card-text">@include open_sans_bolder();</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title typeface-open-sans-bolder-italic">Open Sans Bolder Italic</h3>
+        <p class="card-text">.typeface-open-sans-bolder-italic</p>
+        <p class="card-text">@include open_sans_bolder_italic();</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Icons</h2>
+  <p>Font Awesome Pro is utilized for all icons. FXCM uses the "light" version.</p>
+  <p>A list of all icons can be found here: <a href="https://fontawesome.com/icons?d=gallery&s=light">"Light" Font Awesome icons</a></p>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <i class="icon-example fal fa-arrow-right"></i>
+        </div>
+        <p class="card-text">.fal .fa-arrow-right <span class="text-danger">(default)</span></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Another Example</span></h3>
+        <div class="card-ui">
+          <i class="icon-example fal fa-bell-slash"></i>
+        </div>
+        <p class="card-text">.fal .fa-bell-slash</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Buttons</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Button Primary</span></h3>
+        <div class="card-ui">
+          <button class="btn btn-primary"><i class="fal fa-arrow-right"></i>Button</button>
+        </div>
+        <p class="card-text">.btn .btn-primary <span class="text-danger">(default)</span></p>
+        <p class="forms-model">cssClassValue="btn-primary"</p>
+        <p class="text-danger">How is the icon passed to the button?</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Button Secondary</span></h3>
+        <div class="card-ui">
+          <button class="btn btn-secondary"><i class="fal fa-sign-in"></i>Button</button>
+        </div>
+        <p class="card-text">.btn .btn-secondary</p>
+        <p class="forms-model">cssClassValue="btn-secondary"</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Button Delta</span></h3>
+        <div class="card-ui">
+          <button class="btn btn-outline-primary"><i class="fal fa-angle-double-right"></i>Button</button>
+        </div>
+        <p class="card-text">.btn .btn-outline-primary</p>
+        <p class="forms-model">cssClassValue="btn-outline-primary"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Input (Text)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="text" value="lorem ipsum" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="text" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Readonly</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="text" value="lorem ipsum" placeholder="Placeholder" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Input (Password)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="password" value="lorem ipsum" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="password" value="lorem ipsum" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="lorem ipsum" placeholder="Placeholder" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Readonly</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="password" value="lorem ipsum" placeholder="Placeholder" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Input (Email)</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" />
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-valid" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+              <div class="input-group-append">
+                <div class="input-group-text"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control is-invalid" type="email" value="lorem_ipsum@email.com" placeholder="Placeholder" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Readonly</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <input #formItem class="form-control" type="email" value="" placeholder="Placeholder" readonly />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Select Dropdowns</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control" value="">
+              <option value="" disabled="disabled">Placeholder</option>
+              <option value="lorem">Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control is-valid" value="lorem">
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control is-invalid" value="lorem">
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control" value="lorem" disabled>
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control" value="">
+              <option value="" disabled="disabled">Placeholder</option>
+              <option value="lorem">Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>    
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group">
+            <label>Placeholder</label>
+            <select #formItem class="form-control is-invalid" value="lorem">
+              <option value="" disabled=true>Placeholder</option>
+              <option value="lorem" selected>Lorem</option>
+              <option value="ipsum">Ipsum</option>
+              <option value="dolor">Dolor</option>
+              <option value="sit">Sit</option>
+              <option value="amet">Amet</option>
+            </select>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Language (Flag) Dropdown</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Default</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Valid</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control is-valid" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Invalid</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control is-invalid" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Disabled</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="lorem" disabled>
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Help Text</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+            <small class="form-text text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title"><span class="h-main">Error</span></h3>
+        <div class="card-ui">
+          <div class="form-group bb-flag-selector">
+            <label>Placeholder</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <span class="bb-flag bb-flag-003-tanzania"></span>
+                </div>
+              </div>
+              <select #formItem class="form-control" value="">
+                <option value="" disabled=true>Placeholder</option>
+                <option value="lorem" selected>Lorem</option>
+                <option value="ipsum">Ipsum</option>
+                <option value="dolor">Dolor</option>
+                <option value="sit">Sit</option>
+                <option value="amet">Amet</option>
+              </select>
+            </div>
+            <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+h1 {
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-font-size*2;
+}
+
+h6 {
+  font-size: $small-font-size;
+  margin-bottom: $tiny-height;
+}
+
+.rb-sidebar a:hover {
+  text-decoration: none;
+}
+
+.text-muted-dark {
+  color: $black-a60;
+}

@@ -1,0 +1,33 @@
+$material-icons-font-path: "vendor/material-design-icons/iconfont";
+
+// buttons
+$dropdown-toggle-border: 1px solid $white;
+
+$button-group-button-hover-bgcolor: darken($blue, 10%);
+$button-group-button-focus-bgcolor: darken($blue, 20%);
+
+// header
+$navbar-top-boxshadow: 0 2px 3px 0 rgba(0,0,0,0.12);
+
+// nav brand
+$navbar-brand-height: 80px;
+$navbar-brand-width: 266px;
+$navbar-right-width: 500px;
+
+// sidebar
+$sidebar-width: 280px;
+$sidebar-collapsed-width: 60px;
+$sidebar-icon-size: 20px;
+
+$navigation-item-height: 40px;
+$navigation-link-hover-bgcolor: $accent-blue-a12;
+$navigation-link-focus-bgcolor: $accent-blue-a18;
+$navigation-link-active-bgcolor: $accent-blue-a18;
+$navigation-link-active-color: $white;
+$navigation-header-color: $white-a60;
+
+// content main header
+$content-header-height: 130px;
+
+// notification center
+$notification-spacing-small: $tiny-padding-height;

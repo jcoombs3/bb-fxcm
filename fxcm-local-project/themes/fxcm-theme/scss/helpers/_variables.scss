@@ -1,0 +1,35 @@
+////
+/// Theme Variables
+/// @group helpers
+/// @author Mark de Jong
+////
+
+/// Your new custom sass variables belong here -- which contain common data structure support for css values
+/// This is where the custom theme overrides or extends existing Backbase variables
+/// Use the base.scss for overriding or setting global sass variables
+/// It is not recommended to directly override Bootstrap variables.
+
+$fallback: "Verdana", Arial, "Lucida Grande", sans-serif; 
+$font-family-sans-serif: "Open Sans", $fallback;
+
+$fxcm_blue: #0C51A2;
+$fxcm_cyan: #01ACB6;
+$fxcm_gold: #F4AD02;
+$fxcm_night: #283545;
+$fxcm_gray: #8B9BAC;
+$fxcm_gray_a: #888888;
+$fxcm_gray_b: #666666;
+$fxcm_white: #FFFFFF;
+
+$fxcm_form_input_border: #CCCCCC;
+
+$theme-colors: (
+  "primary": $fxcm_blue,
+  "secondary": $fxcm_cyan,
+  "info": $fxcm_gold,
+  "light": $fxcm_gray,
+  "dark": $fxcm_night
+);
+
+$white: #FFFFFF;
+$black: #000000;

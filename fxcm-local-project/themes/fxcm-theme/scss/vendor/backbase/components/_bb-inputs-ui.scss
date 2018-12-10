@@ -1,0 +1,6 @@
+.ng-invalid.ng-touched {
+  > input:not(:focus),
+  > select:not(:focus) {
+    @extend .is-invalid
+  }
+}
