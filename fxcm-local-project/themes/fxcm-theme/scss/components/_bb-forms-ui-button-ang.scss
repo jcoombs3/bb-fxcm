@@ -29,10 +29,10 @@ $btn_padding_horizontal: 20px;
       margin-right: ($btn_padding_horizontal - 2px);
     }
   }
-
-  &:before {
-    content: '-';
+  
+  i {
     color: inherit;
-    margin-right: $btn_padding_horizontal;
+    font-size: 1.3rem;
+    margin-right: $btn_padding_horizontal * (2/3);
   }
 }
