@@ -9,6 +9,7 @@ import { BbFormsDirectivesModule } from '@backbase/forms-directives-ang';
 // Components
 import { FxcmFormButtonComponent } from './components/fxcm-form-button/fxcm-form-button.component';
 import { FxcmFormInputTextComponent } from './components/fxcm-form-input-text/fxcm-form-input-text.component';
+import { FxcmFormInputCheckboxComponent } from './components/fxcm-form-input-checkbox/fxcm-form-input-checkbox.component';
 import { FxcmFormFlagSelectorComponent } from './components/fxcm-form-flag-selector/fxcm-form-flag-selector.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FxcmFormFlagSelectorComponent } from './components/fxcm-form-flag-selec
       classMap: {
         FxcmFormButtonComponent,
         FxcmFormInputTextComponent,
+        FxcmFormInputCheckboxComponent,
         FxcmFormFlagSelectorComponent
       },
     }),
@@ -27,6 +29,7 @@ import { FxcmFormFlagSelectorComponent } from './components/fxcm-form-flag-selec
   declarations: [
     FxcmFormButtonComponent,
     FxcmFormInputTextComponent,
+    FxcmFormInputCheckboxComponent,
     FxcmFormFlagSelectorComponent
   ]
 })

@@ -1,0 +1,85 @@
+/**
+* FXCM Form Checkbox
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663670
+*
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-10-2018
+*
+* Changes from Design:
+* - None
+*/
+
+$input_checkbox_width: 18px;
+$color_checkbox: $fxcm_blue;
+
+.form-check {
+  padding-left: $input_checkbox_width + 5px;
+  position: relative;
+  
+  .form-check-label {
+    @include h_label();
+    text-transform: none;
+  }
+    
+  input {
+    opacity: 0;
+    position: absolute;
+
+    &:checked ~ .checkmark {
+      background-color: $fxcm_blue;
+      color: $white;
+    }
+  
+    &.is-valid ~ .form-check-label {
+      color: inherit;
+    }
+    
+    &:disabled ~ .checkmark {
+      background-color: $white;
+      border-color: $fxcm_gray;
+    }
+    
+    &:disabled:checked ~ .checkmark {
+      background-color: $fxcm_gray_a;
+    }
+  } 
+  
+  .checkmark {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    padding-top: 1px;
+    margin-top: 1px;
+    margin-left: -($input_checkbox_width + 5px);
+    height: $input_checkbox_width;
+    width: $input_checkbox_width;
+    background: $white;
+    color: $white;
+    border: 1px solid $color_checkbox;
+    border-radius: 3px;
+  }
+
+  .form-check-info {
+    color: $fxcm_night;
+    padding: 0px 5px 0px 0px;
+    position: absolute;
+    left: -1.6rem;
+    top: 1px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+
+    i {
+      font-size: 1.3rem;
+    }
+  }
+  
+  .form-check-info-box {
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid $fxcm_gold;
+    background: rgba($fxcm_gold, 0.25);
+  }
+}
