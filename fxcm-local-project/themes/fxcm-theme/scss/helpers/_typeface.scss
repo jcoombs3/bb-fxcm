@@ -43,3 +43,31 @@
 .typeface-open-sans-bold-italic { @include open_sans_bold_italic(); }
 .typeface-open-sans-bolder { @include open_sans_bolder(); }
 .typeface-open-sans-bolder-italic { @include open_sans_bolder_italic(); }
+
+
+@mixin verdana {
+  font-family: $font-family-sans-serif-secondary;
+  font-weight: 500;
+}
+@mixin verdana_italic {
+  font-family: $font-family-sans-serif-secondary;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.typeface-verdana { @include verdana(); }
+.typeface-verdana-italic { @include verdana_italic(); }
+
+
+@mixin arial {
+  font-family: $fallback;
+  font-weight: 500;
+}
+@mixin arial_italic {
+  font-family: $fallback;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.typeface-arial { @include arial(); }
+.typeface-arial-italic { @include arial_italic(); }
