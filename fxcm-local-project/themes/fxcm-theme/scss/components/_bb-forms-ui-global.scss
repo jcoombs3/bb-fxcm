@@ -37,6 +37,10 @@ $bb_input_prepend_width: 35px;
   
   .form-control {
     border-color: $fxcm_form_input_border;
+    
+    &:not(:last-child) {
+      padding-right: 0px;
+    }
   }
   
   label {
