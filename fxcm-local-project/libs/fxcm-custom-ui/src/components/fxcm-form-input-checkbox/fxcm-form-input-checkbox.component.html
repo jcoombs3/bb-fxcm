@@ -1,0 +1,25 @@
+<div class="container">
+  <div *ngIf="model?.properties | async; let props;" bbFormUi [change]="change"
+       class="form-check {{props.cssClassValue}}">
+    <div class="form-check-info" (click)="this.toggleHelp()">
+      <i class="fal fa-info-circle"></i>
+    </div>
+    <input
+      #formItem
+      class="form-check-input"
+      [ngClass]="{'is-valid': props.isValid && props.value, 'is-invalid': !props.isValid }"
+      [id]="model.name"
+      type="checkbox"
+      [checked]="props.value === 'true'"
+      [disabled]="props.disabled"
+      [readOnly]="props.readonly"
+      [placeholder]="props.placeholder"
+      (change)="onChange(formItem.checked)" />
+    <span class="checkmark fal fa-check"></span>
+    <label class="form-check-label" [for]="model.name">{{props.label}}</label>
+    <small *ngIf="props.helpText" [hidden]="!this.helpIsOpen" class="form-text text-muted">{{props.helpText}}</small>
+    <bb-forms-inline-error-ang [messages]="props.messages.errors"></bb-forms-inline-error-ang>
+  </div>
+</div>
+
+

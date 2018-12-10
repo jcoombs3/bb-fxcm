@@ -4,13 +4,17 @@ export function customClassId(name: string, properties: FormItemProperties): str
   
   console.log('++ properties', properties);
   
-  // Add your FXCM custom properties here. 
+  // Add FXCM custom properties here. 
   if (properties.classId === 'BbFormButtonComponent') {
     return 'FxcmFormButtonComponent';
   }
   
   if (properties.classId === 'BbFormInputTextComponent') {
     return 'FxcmFormInputTextComponent';
+  }
+  
+  if (properties.classId === 'BbFormInputCheckboxComponent') {
+    return 'FxcmFormInputCheckboxComponent';
   }
   
   if (properties.classId == 'BbFormSelectComponent') {
