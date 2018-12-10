@@ -1,0 +1,21 @@
+a {
+  color: $fxcm_blue;
+  @include open_sans_bold();
+  text-decoration: underline;
+  
+  &:hover, &:active {
+    color: rgba($fxcm_blue, 0.9);
+    text-decoration: underline;
+  }
+  
+  &:not([href]):not([tabindex]){
+    color: $fxcm_gray_a;
+    text-decoration: underline;
+    cursor: not-allowed;
+    
+    &:hover, &:active {
+      color: rgba($fxcm_gray_a, 0.9);
+      text-decoration: underline;
+    }
+  }
+}
