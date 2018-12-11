@@ -1,4 +1,4 @@
 module.exports = {
-  componentName: 'UiProgressBar',
+  componentName: 'ProgressBar',
   template:`<p> Example works! </p>`
 }
