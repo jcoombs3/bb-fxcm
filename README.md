@@ -3,10 +3,10 @@
 Requirements
 ------------
 
-###NodeJS
+### NodeJS
 Server-side JavaScript. Required for build process. [Download]('http://nodejs.org/download/')
 
-###Compass
+### Compass
 SASS library/CSS pre-processor (requires [Ruby]('https://www.ruby-lang.org/en/downloads/')). Enter the following from the command line to install:
 ````
 gem update --system
@@ -25,7 +25,7 @@ Project Setup
 Development
 -----------
 
-###Styles
+### Styles
 The main SASS file for the project is **themes/fxcm-theme/scss/main.scss** all other SASS files (partials) are imported to this file.
 
 All partials should be prefixed with and _. ex: ( _partialName ). They can be imported into the **main.scss** file by using `@import partialName` rule. The underscore does not need to be included when importing.
@@ -40,10 +40,10 @@ For development, we will be working within the **/app** and **/libs** directory.
 CXP Integration
 -----------
 
-###Local Setup 
+### Local Setup 
 Follow this backbase documentation to setup a local CX6 instance. [Backbase documentation here]('https://community.backbase.com/documentation/forms/latest/prepare_local_dev_env')
 
-###Import Experience
+### Import Experience
 From the root directory of fxcm-local-project 
 ```
 npm run package:apps
