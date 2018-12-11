@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BackbaseCoreModule } from '@backbase/core-ang';
+import { UiProgressBarModule } from './ui-progress-bar/ui-progress-bar.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    BackbaseCoreModule.withConfig({
-      classMap: {
-      },
-    }),
+    UiProgressBarModule,
   ],
   declarations: [
+  ],
+  exports: [
+    UiProgressBarModule
   ]
 })
 export class FxcmCustomUiModule { }
