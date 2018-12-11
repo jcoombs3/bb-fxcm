@@ -179,6 +179,25 @@
           }
         }
       }
+    },
+    "fxcm-forms-custom-ui": {
+      "root": "libs/fxcm-forms-custom-ui",
+      "sourceRoot": "libs/fxcm-forms-custom-ui/src",
+      "projectType": "library",
+      "prefix": "bb",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/fxcm-forms-custom-ui/**/*.ts"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
