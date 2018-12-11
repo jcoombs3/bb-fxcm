@@ -49,10 +49,7 @@ From the root directory of fxcm-local-project
 npm run package:apps
 ```
 All production code is output to the **dist/** directory
-
-
-
-
-
-## Commands 
-npm run package:apps && bb-import dist/provisioning-packages/fxcm-app.zip --portal-host localhost --portal-port 8080 --portal-version 6
+```
+bb-import dist/provisioning-packages/fxcm-app.zip --portal-host localhost --portal-port 8080 --portal-version 6
+```
+***.zip*** file will be imported into your CX6 instance. From there, you can see all your changes either in your portal or in the Enterprise catalog of CX6.
