@@ -14,3 +14,10 @@
 //   display: -webkit-flex;
 //   display: flex;
 // }
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition:    $transition;
+  -ms-transition:     $transition;
+  -o-transition:      $transition;
+}

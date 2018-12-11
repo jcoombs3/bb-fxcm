@@ -1,24 +1,9 @@
 <section class="container">
   <h1 class="h-main">FXCM Frontend Styleguide</h1>
   <div>
-    <strong>Last Update</strong>: v1.0.3 Dec-10 2018 
+    <strong>Last Update</strong>: v1.0.4 Dec-11 2018 
     <br/>
-    <strong>Latest Content Update</strong>: Checkboxes
-  </div>
-</section>
-
-<section class="container">
-  <h2 class="styleguide-section-title h-secondary">Progress Bar</h2>
-  <div class="card-deck">
-    <div class="card">
-      <div class="card-body">
-        <h3 class="card-title">Default</h3>
-        <div class="card-ui">
-          <bb-progress-bar-ui></bb-progress-bar-ui>
-        </div>
-        <p class="card-text">&lt;bb-progress-bar-ui&gt;&nbsp;&lt;/bb-progress-bar-ui&gt;</p>
-      </div>
-    </div>
+    <strong>Latest Content Update</strong>: Progress Bar
   </div>
 </section>
 
@@ -1032,6 +1017,29 @@
             </div>
             <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
           </div>   
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Progress Bar</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Default</h3>
+        <div class="card-ui">
+          <bb-progress-bar-ui complete="80"></bb-progress-bar-ui>
+        </div>
+        <p class="card-text">&lt;bb-progress-bar-ui [complete]="80"&gt;</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Unfilled</h3>
+        <div class="card-ui">
+          <bb-progress-bar-ui></bb-progress-bar-ui>
         </div>
       </div>
     </div>
