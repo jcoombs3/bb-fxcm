@@ -1,0 +1,74 @@
+/**
+* FXCM Wizard Step
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663672
+
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-12-2018
+*
+* Changes from Design:
+* - None
+*/
+
+$wizard_step_width: 80px;
+$wizard_step_icon_size: 2rem;
+
+.bb-wizard-step-ui {
+  color: $fxcm_night;
+  text-align: center;
+  
+  .bb-wizard-step-circle {
+    width: $wizard_step_width;
+    height: $wizard_step_width;
+    border: 2px solid $fxcm_night;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    &:before {
+      display: block;
+      width: 100%;
+      font-size: $wizard_step_icon_size;
+    }
+  }
+  
+  .bb-wizard-step-complete {
+    background: $fxcm_green;
+    color: $white;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $fxcm_wizard_bg;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+    font-size: 0.8rem;
+    
+    &:before {
+      margin-top: 1px;
+      width: 100%;
+    }
+  }
+  
+  h2 {
+    @include open_sans_light();
+    text-transform: capitalize;
+  }
+  
+  &.active .bb-wizard-step-circle {
+    background: $fxcm_night;
+    color: $white;
+  }
+  
+  &.complete .bb-wizard-step-complete {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

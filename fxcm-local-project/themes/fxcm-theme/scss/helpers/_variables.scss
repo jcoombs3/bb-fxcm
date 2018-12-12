@@ -13,6 +13,7 @@ $fallback: Arial, "Lucida Grande", sans-serif;
 $font-family-sans-serif: "Open Sans", "Verdana", $fallback;
 $font-family-sans-serif-secondary: "Verdana", $fallback;
 
+// Brand Colors
 $fxcm_blue: #0C51A2;
 $fxcm_cyan: #01ACB6;
 $fxcm_gold: #F4AD02;
@@ -22,9 +23,12 @@ $fxcm_gray_a: #888888;
 $fxcm_gray_b: #666666;
 $fxcm_white: #FFFFFF;
 
+// Miscellaneous Colors
 $fxcm_form_input_border: #CCCCCC;
-
 $fxcm_progress_bar_bg: #D8D8D8;
+$fxcm_green: #88B722;
+$fxcm_bg: #EEF4F7;
+$fxcm_wizard_bg: #D8E4EA;
 
 $theme-colors: (
   "primary": $fxcm_blue,

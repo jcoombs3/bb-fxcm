@@ -1,3 +1,8 @@
-<p>
-  WizardStep works!
-</p>
+<div class="bb-wizard-step-ui"
+     [ngClass]="{'active': this.isActive, 'complete': this.isComplete && !this.isActive}">
+  <div class="bb-wizard-step-circle fal fa-{{this.icon}}">
+    <div class="bb-wizard-step-complete fal fa-check">
+    </div>
+  </div>
+  <h2 *ngIf="this.heading">{{this.heading}}</h2>
+</div>

@@ -8,6 +8,39 @@
 </section>
 
 <section class="container">
+  <h2 class="styleguide-section-title h-secondary">Wizard Step</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Default</h3>
+        <div class="card-ui">
+          <bb-wizard-step-ui heading="create user" icon="user-circle"></bb-wizard-step-ui>
+        </div>
+        <p class="card-text">&lt;bb-wizard-step-ui&gt;</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Active</h3>
+        <div class="card-ui">
+          <bb-wizard-step-ui heading="create user" icon="user-circle" [isActive]=true></bb-wizard-step-ui>
+        </div>
+        <p class="card-text">&lt;bb-wizard-step-ui&gt;</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Complete</h3>
+        <div class="card-ui">
+          <bb-wizard-step-ui heading="create user" icon="user-circle" [isComplete]=true></bb-wizard-step-ui>
+        </div>
+        <p class="card-text">&lt;bb-wizard-step-ui&gt;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
   <h2 class="styleguide-section-title h-secondary">Colors</h2>
   <div class="card-deck">
     <div class="card bg-fxcm-blue text-white">
