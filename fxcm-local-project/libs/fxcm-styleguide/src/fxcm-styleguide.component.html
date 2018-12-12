@@ -1,9 +1,9 @@
 <section class="container">
   <h1 class="h-main">FXCM Frontend Styleguide</h1>
   <div>
-    <strong>Last Update</strong>: v1.0.4 Dec-11 2018 
+    <strong>Last Update</strong>: v1.0.5 Dec-12 2018 
     <br/>
-    <strong>Latest Content Update</strong>: Progress Bar
+    <strong>Latest Content Update</strong>: Wizard Step
   </div>
 </section>
 
@@ -1018,6 +1018,39 @@
             <bb-forms-inline-error-ang [messages]="errors"></bb-forms-inline-error-ang>
           </div>   
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="styleguide-section-title h-secondary">Wizard Step</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Default</h3>
+        <div class="card-ui">
+          <bb-wizard-step-ui heading="create user" icon="user-circle"></bb-wizard-step-ui>
+        </div>
+        <p class="card-text">&lt;bb-wizard-step-ui heading="create user" icon="user-circle"&gt;</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Active</h3>
+        <div class="card-ui">
+          <bb-wizard-step-ui heading="create user" icon="user-circle" [isActive]=true></bb-wizard-step-ui>
+        </div>
+        <p class="card-text">&lt;bb-wizard-step-ui [isActive]=true&gt;</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Complete</h3>
+        <div class="card-ui">
+          <bb-wizard-step-ui heading="create user" icon="user-circle" [isComplete]=true></bb-wizard-step-ui>
+        </div>
+        <p class="card-text">&lt;bb-wizard-step-ui [isComplete]=true&gt;</p>
       </div>
     </div>
   </div>
