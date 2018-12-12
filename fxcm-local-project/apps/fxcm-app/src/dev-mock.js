@@ -29,15 +29,15 @@ window.document.addEventListener('DOMContentLoaded', () => {
           classId: 'FxcmStyleguideComponent'
         }
       },
-//      {
-//        name: 'my-forms-container',
-//        properties: {
-//          classId: 'BbFormsContainerComponent',
-//          formId: '',
-//          apiRoot: '',
-//        },
-//        children: [createFormModel()],
-//      },
+      {
+        name: 'my-forms-container',
+        properties: {
+          classId: 'BbFormsContainerComponent',
+          formId: '',
+          apiRoot: '',
+        },
+        children: [createFormModel()],
+      },
     ],
   };
 
