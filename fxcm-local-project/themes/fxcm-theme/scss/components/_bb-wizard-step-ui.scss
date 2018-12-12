@@ -11,7 +11,7 @@
 */
 
 $wizard_step_width: 80px;
-$wizard_step_icon_size: 2rem;
+$wizard_step_icon_size: 1.8rem;
 
 .bb-wizard-step-ui {
   color: $fxcm_night;
@@ -56,7 +56,8 @@ $wizard_step_icon_size: 2rem;
   }
   
   h2 {
-    @include open_sans_light();
+    font-size: 1.2rem;
+    margin-top: 5px;
     text-transform: capitalize;
   }
   
