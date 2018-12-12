@@ -1,0 +1,48 @@
+/**
+* FXCM Progress Bar
+* Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663675
+
+* @author  BB-ATL FE
+* @version 1.0.0
+* @since   12-11-2018
+*
+* Changes from Design:
+* - None
+*/
+
+$progress_bar_height: 22px;
+$progress_bar_padding: 10px;
+
+.bb-progress-bar-ui {
+  background: $fxcm_progress_bar_bg;
+  color: $white;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  height: $progress_bar_height;
+  
+  .bb-progress-bar-ui-inner {
+    width: 0%; // default
+    height: 100%;
+    background: $fxcm_gold;
+    border-radius: inherit;
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    @include open_sans_light();
+    @include transition(width 500ms ease);
+  }
+  
+  .bb-progress-bar-ui-text {
+    position: absolute;
+    width: 120px;
+    right: 0;
+    text-align: right;
+    padding: 0px $progress_bar_padding 0px 0px;
+  }
+  
+}
