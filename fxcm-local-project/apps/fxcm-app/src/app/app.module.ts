@@ -13,6 +13,7 @@ import { environment } from '../environments/environment';
 import { FxcmStyleguideModule } from '@backbase/fxcm-styleguide';
 import { FxcmCustomUiModule } from '@backbase/fxcm-custom-ui';
 import { FxcmFormsCustomUiModule } from '@backbase/fxcm-forms-custom-ui';
+import { FxcmWizardStepsModule } from '@backbase/fxcm-wizard-steps';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FxcmFormsCustomUiModule } from '@backbase/fxcm-forms-custom-ui';
     FxcmStyleguideModule,
     FxcmCustomUiModule,
     FxcmFormsCustomUiModule,
+    FxcmWizardStepsModule,
   ],
   providers: [...environment.mockProviders],
   bootstrap: [AppComponent]

@@ -198,6 +198,25 @@
           }
         }
       }
+    },
+    "fxcm-wizard-steps": {
+      "root": "libs/fxcm-wizard-steps",
+      "sourceRoot": "libs/fxcm-wizard-steps/src",
+      "projectType": "library",
+      "prefix": "bb",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "files": [
+              "libs/fxcm-wizard-steps/**/*.ts"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
