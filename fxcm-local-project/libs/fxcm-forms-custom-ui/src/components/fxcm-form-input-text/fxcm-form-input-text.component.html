@@ -1,11 +1,13 @@
 <div *ngIf="model?.properties | async; let props;" bbFormUi [change]="change" class="form-group {{props.cssClassValue}}">
   <label [for]="model.name">{{props.label}}</label>
   <div class="input-group">
-    <input #formItem class="form-control" [ngClass]="{'is-valid': props.isValid && props.value, 'is-invalid': !props.isValid }" [id]="model.name" type="{{props.dataType}}" [value]="props.value" [disabled]="props.disabled" [readOnly]="props.readonly" [placeholder]="props.placeholder" (blur)="onChange(formItem.value)" (maxlength)="props.maxLength" />
+    <input #formItem class="form-control" [ngClass]="{'is-valid': props.isValid && props.value, 'is-invalid': !props.isValid }" [id]="model.name" type="{{props.dataType}}" [value]="props.value" [disabled]="props.disabled" [readOnly]="props.readonly" [placeholder]="props.placeholder" (blur)="onChange(formItem.value)" (focus)="focusFunction()" (maxlength)="props.maxLength" />
     <div class="input-group-append" *ngIf="props.isValid && !props.readonly && !props.disabled">
       <div class="input-group-text"></div>
     </div>
   </div>
-  <small *ngIf="props.helpText" class="form-text text-muted">{{props.helpText}}</small>
+  <small *ngIf="props.helpText" class="form-text text-muted" 
+         [hidden]="props.dataType === 'password' && !this.isFocused">{{props.helpText}}</small>
   <bb-forms-inline-error-ang [messages]="props.messages.errors"></bb-forms-inline-error-ang>
 </div>
+

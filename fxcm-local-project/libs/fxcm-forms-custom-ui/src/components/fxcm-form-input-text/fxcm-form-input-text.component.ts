@@ -7,6 +7,7 @@ import { ItemModel } from '@backbase/core-ang';
 })
 export class FxcmFormInputTextComponent {
   change = new EventEmitter<string>();
+  private isFocused: Boolean = false;
   
   constructor(public model: ItemModel) {}
   
@@ -16,6 +17,11 @@ export class FxcmFormInputTextComponent {
    * @return {?}
    */
   onChange(value: string) {
+    this.isFocused = false;
     this.change.next(value);
+  }
+  
+  focusFunction() {
+    this.isFocused = true;
   }
 }
