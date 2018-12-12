@@ -53,3 +53,6 @@ All production code is output to the **dist/** directory
 bb-import dist/provisioning-packages/fxcm-app.zip --portal-host localhost --portal-port 8080 --portal-version 6
 ```
 ***.zip*** file will be imported into your CX6 instance. From there, you can see all your changes either in your portal or in the Enterprise catalog of CX6.
+```
+npm run package:apps && bb-import dist/provisioning-packages/fxcm-app.zip --portal-host localhost --portal-port 8080 --portal-version 6
+```
