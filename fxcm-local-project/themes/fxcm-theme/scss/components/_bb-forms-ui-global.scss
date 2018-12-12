@@ -67,16 +67,10 @@ $bb_input_prepend_width: 35px;
     background: $white;
     width: $bb_input_prepend_width;
     padding: 0;
+    color: $fxcm_blue;
     
-    &:after { // TODO: make this an icon
-      content: "";
-      width: 5px; 
-      height: 10px; 
-      border: solid $fxcm_blue;
-      border-width: 0 3px 3px 0;
-      -webkit-transform: rotate(45deg); 
-      -ms-transform: rotate(45deg);
-      transform: rotate(45deg); 
+    &:after {
+      @include fxcm-icon($fa-var-check);
     }
   }
 }
