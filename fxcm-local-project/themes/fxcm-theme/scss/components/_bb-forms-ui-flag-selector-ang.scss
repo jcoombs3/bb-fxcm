@@ -3,8 +3,8 @@
 * Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663670
 *
 * @author  BB-ATL FE
-* @version 1.0.0
-* @since   12-4-2018
+* @version 1.0.1
+* @since   12-12-2018
 *
 * Changes from Design:
 * - None
@@ -21,19 +21,1053 @@ $assets_path: '../assets/images/flags/png/';
 }
 
 .form-group.bb-flag-selector {
-  
+
   .input-group-prepend .input-group-text {
     padding: 0px 0.375rem 0px 0.75rem;
     width: auto;
   }
-  
+
   .form-control {
     padding-left: 0.375rem;
   }
 }
 
-.bb-flag-001-ethiopia { @include bb_flag_image('001-ethiopia.png'); }
-.bb-flag-002-oman { @include bb_flag_image('002-oman.png'); }
-.bb-flag-003-tanzania { @include bb_flag_image('003-tanzania.png'); }
-.bb-flag-004-slovenia { @include bb_flag_image('004-slovenia.png'); }
-.bb-flag-005-puerto-rico { @include bb_flag_image('005-puerto-rico.png'); }
+.bb-flag-ethiopia {
+  @include bb_flag_image('001-ethiopia.png');
+}
+
+.bb-flag-oman {
+  @include bb_flag_image('002-oman.png');
+}
+
+.bb-flag-tanzania {
+  @include bb_flag_image('003-tanzania.png');
+}
+
+.bb-flag-slovenia {
+  @include bb_flag_image('004-slovenia.png');
+}
+
+.bb-flag-puerto-rico {
+  @include bb_flag_image('005-puerto-rico.png');
+}
+
+.bb-flag-mozambique {
+  @include bb_flag_image('006-mozambique.png');
+}
+
+.bb-flag-iraq {
+  @include bb_flag_image('007-iraq.png');
+}
+
+.bb-flag-lebanon {
+  @include bb_flag_image('008-lebanon.png');
+}
+
+.bb-flag-uganda {
+  @include bb_flag_image('009-uganda.png');
+}
+
+.bb-flag-nigeria {
+  @include bb_flag_image('010-nigeria.png');
+}
+
+.bb-flag-italy {
+  @include bb_flag_image('011-italy.png');
+}
+
+.bb-flag-malta {
+  @include bb_flag_image('012-malta.png');
+}
+
+.bb-flag-tunisia {
+  @include bb_flag_image('013-tunisia.png');
+}
+
+.bb-flag-nicaragua {
+  @include bb_flag_image('014-nicaragua.png');
+}
+
+.bb-flag-el-salvador {
+  @include bb_flag_image('015-el-salvador.png');
+}
+
+.bb-flag-zambia {
+  @include bb_flag_image('016-zambia.png');
+}
+
+.bb-flag-wales {
+  @include bb_flag_image('017-wales.png');
+}
+
+.bb-flag-dominican-republic {
+  @include bb_flag_image('018-dominican-republic.png');
+}
+
+.bb-flag-qatar {
+  @include bb_flag_image('019-qatar.png');
+}
+
+.bb-flag-namibia {
+  @include bb_flag_image('020-namibia.png');
+}
+
+.bb-flag-mauritius {
+  @include bb_flag_image('021-mauritius.png');
+}
+
+.bb-flag-european-union {
+  @include bb_flag_image('022-european-union.png');
+}
+
+.bb-flag-luxembourg {
+  @include bb_flag_image('023-luxembourg.png');
+}
+
+.bb-flag-hawaii {
+  @include bb_flag_image('024-hawaii.png');
+}
+
+.bb-flag-lithuania {
+  @include bb_flag_image('025-lithuania.png');
+}
+
+.bb-flag-jamaica {
+  @include bb_flag_image('026-jamaica.png');
+}
+
+.bb-flag-honduras {
+  @include bb_flag_image('027-honduras.png');
+}
+
+.bb-flag-myanmar {
+  @include bb_flag_image('028-myanmar.png');
+}
+
+.bb-flag-kenya {
+  @include bb_flag_image('029-kenya.png');
+}
+
+.bb-flag-cyprus {
+  @include bb_flag_image('030-cyprus.png');
+}
+
+.bb-flag-pakistan {
+  @include bb_flag_image('031-pakistan.png');
+}
+
+.bb-flag-latvia {
+  @include bb_flag_image('032-latvia.png');
+}
+
+.bb-flag-japan {
+  @include bb_flag_image('033-japan.png');
+}
+
+.bb-flag-kazakhstan {
+  @include bb_flag_image('034-kazakhstan.png');
+}
+
+.bb-flag-serbia {
+  @include bb_flag_image('035-serbia.png');
+}
+
+.bb-flag-scotland {
+  @include bb_flag_image('036-scotland.png');
+}
+
+.bb-flag-north-korea {
+  @include bb_flag_image('037-north-korea.png');
+}
+
+.bb-flag-uruguay {
+  @include bb_flag_image('038-uruguay.png');
+}
+
+.bb-flag-syria {
+  @include bb_flag_image('039-syria.png');
+}
+
+.bb-flag-guatemala {
+  @include bb_flag_image('040-guatemala.png');
+}
+
+.bb-flag-iceland {
+  @include bb_flag_image('041-iceland.png');
+}
+
+.bb-flag-jordan {
+  @include bb_flag_image('042-jordan.png');
+}
+
+.bb-flag-monaco {
+  @include bb_flag_image('043-monaco.png');
+}
+
+.bb-flag-spain {
+  @include bb_flag_image('044-spain.png');
+}
+
+.bb-flag-slovakia {
+  @include bb_flag_image('045-slovakia.png');
+}
+
+.bb-flag-united-nations {
+  @include bb_flag_image('046-united-nations.png');
+}
+
+.bb-flag-panama {
+  @include bb_flag_image('047-panama.png');
+}
+
+.bb-flag-new-zealand {
+  @include bb_flag_image('048-new-zealand.png');
+}
+
+.bb-flag-ecuador {
+  @include bb_flag_image('049-ecuador.png');
+}
+
+.bb-flag-romania {
+  @include bb_flag_image('050-romania.png');
+}
+
+.bb-flag-chile {
+  @include bb_flag_image('051-chile.png');
+}
+
+.bb-flag-finland {
+  @include bb_flag_image('052-finland.png');
+}
+
+.bb-flag-hungary {
+  @include bb_flag_image('053-hungary.png');
+}
+
+.bb-flag-belgium {
+  @include bb_flag_image('054-belgium.png');
+}
+
+.bb-flag-south-korea {
+  @include bb_flag_image('055-south-korea.png');
+}
+
+.bb-flag-malaysia {
+  @include bb_flag_image('056-malaysia.png');
+}
+
+.bb-flag-venezuela {
+  @include bb_flag_image('057-venezuela.png');
+}
+
+.bb-flag-norway {
+  @include bb_flag_image('058-norway.png');
+}
+
+.bb-flag-saudi-arabia {
+  @include bb_flag_image('059-saudi-arabia.png');
+}
+
+.bb-flag-israel {
+  @include bb_flag_image('060-israel.png');
+}
+
+.bb-flag-czech-republic {
+  @include bb_flag_image('061-czech-republic.png');
+}
+
+.bb-flag-colombia {
+  @include bb_flag_image('062-colombia.png');
+}
+
+.bb-flag-iran {
+  @include bb_flag_image('063-iran.png');
+}
+
+.bb-flag-argentina {
+  @include bb_flag_image('064-argentina.png');
+}
+
+.bb-flag-ukraine {
+  @include bb_flag_image('065-ukraine.png');
+}
+
+.bb-flag-germany {
+  @include bb_flag_image('066-germany.png');
+}
+
+.bb-flag-hong-kong {
+  @include bb_flag_image('067-hong-kong.png');
+}
+
+.bb-flag-united-arab-emirates {
+  @include bb_flag_image('068-united-arab-emirates.png');
+}
+
+.bb-flag-laos {
+  @include bb_flag_image('069-laos.png');
+}
+
+.bb-flag-ireland {
+  @include bb_flag_image('070-ireland.png');
+}
+
+.bb-flag-greece {
+  @include bb_flag_image('071-greece.png');
+}
+
+.bb-flag-denmark {
+  @include bb_flag_image('072-denmark.png');
+}
+
+.bb-flag-sweden {
+  @include bb_flag_image('073-sweden.png');
+}
+
+.bb-flag-peru {
+  @include bb_flag_image('074-peru.png');
+}
+
+.bb-flag-south-africa {
+  @include bb_flag_image('075-south-africa.png');
+}
+
+.bb-flag-philippines {
+  @include bb_flag_image('076-philippines.png');
+}
+
+.bb-flag-france {
+  @include bb_flag_image('077-france.png');
+}
+
+.bb-flag-indonesia {
+  @include bb_flag_image('078-indonesia.png');
+}
+
+.bb-flag-egypt {
+  @include bb_flag_image('079-egypt.png');
+}
+
+.bb-flag-taiwan {
+  @include bb_flag_image('080-taiwan.png');
+}
+
+.bb-flag-cook-islands {
+  @include bb_flag_image('081-cook-islands.png');
+}
+
+.bb-flag-cocos-island {
+  @include bb_flag_image('082-cocos-island.png');
+}
+
+.bb-flag-christmas-island {
+  @include bb_flag_image('083-christmas-island.png');
+}
+
+.bb-flag-ceuta {
+  @include bb_flag_image('084-ceuta.png');
+}
+
+.bb-flag-american-samoa {
+  @include bb_flag_image('085-american-samoa.png');
+}
+
+.bb-flag-morocco {
+  @include bb_flag_image('086-morocco.png');
+}
+
+.bb-flag-anguilla {
+  @include bb_flag_image('087-anguilla.png');
+}
+
+.bb-flag-corsica {
+  @include bb_flag_image('088-corsica.png');
+}
+
+.bb-flag-canary-islands {
+  @include bb_flag_image('089-canary-islands.png');
+}
+
+.bb-flag-comoros {
+  @include bb_flag_image('090-comoros.png');
+}
+
+.bb-flag-central-african-republic {
+  @include bb_flag_image('091-central-african-republic.png');
+}
+
+.bb-flag-cayman-islands {
+  @include bb_flag_image('092-cayman-islands.png');
+}
+
+.bb-flag-british-indian-ocean-territory {
+  @include bb_flag_image('093-british-indian-ocean-territory.png');
+}
+
+.bb-flag-bhutan {
+  @include bb_flag_image('094-bhutan.png');
+}
+
+.bb-flag-chad {
+  @include bb_flag_image('095-chad.png');
+}
+
+.bb-flag-cape-verde {
+  @include bb_flag_image('096-cape-verde.png');
+}
+
+.bb-flag-switzerland {
+  @include bb_flag_image('097-switzerland.png');
+}
+
+.bb-flag-benin {
+  @include bb_flag_image('098-benin.png');
+}
+
+.bb-flag-aruba {
+  @include bb_flag_image('099-aruba.png');
+}
+
+.bb-flag-balearic-islands {
+  @include bb_flag_image('101-balearic-islands.png');
+}
+
+.bb-flag-andorra {
+  @include bb_flag_image('102-andorra.png');
+}
+
+.bb-flag-burundi {
+  @include bb_flag_image('103-burundi.png');
+}
+
+.bb-flag-antigua-and-barbuda {
+  @include bb_flag_image('104-antigua-and-barbuda.png');
+}
+
+.bb-flag-aland-islands {
+  @include bb_flag_image('105-aland-islands.png');
+}
+
+.bb-flag-cameroon {
+  @include bb_flag_image('106-cameroon.png');
+}
+
+.bb-flag-brunei {
+  @include bb_flag_image('107-brunei.png');
+}
+
+.bb-flag-poland {
+  @include bb_flag_image('108-poland.png');
+}
+
+.bb-flag-bonaire {
+  @include bb_flag_image('109-bonaire.png');
+}
+
+.bb-flag-belarus {
+  @include bb_flag_image('110-belarus.png');
+}
+
+.bb-flag-barbados {
+  @include bb_flag_image('111-barbados.png');
+}
+
+.bb-flag-british-virgin-islands {
+  @include bb_flag_image('112-british-virgin-islands.png');
+}
+
+.bb-flag-bosnia-and-herzegovina {
+  @include bb_flag_image('113-bosnia-and-herzegovina.png');
+}
+
+.bb-flag-bermuda {
+  @include bb_flag_image('114-bermuda.png');
+}
+
+.bb-flag-belize {
+  @include bb_flag_image('115-belize.png');
+}
+
+.bb-flag-bahrain {
+  @include bb_flag_image('116-bahrain.png');
+}
+
+.bb-flag-albania {
+  @include bb_flag_image('117-albania.png');
+}
+
+.bb-flag-burkina-faso {
+  @include bb_flag_image('118-burkina-faso.png');
+}
+
+.bb-flag-turkey {
+  @include bb_flag_image('119-turkey.png');
+}
+
+.bb-flag-basque-country {
+  @include bb_flag_image('120-basque-country.png');
+}
+
+.bb-flag-armenia {
+  @include bb_flag_image('121-armenia.png');
+}
+
+.bb-flag-afghanistan {
+  @include bb_flag_image('122-afghanistan.png');
+}
+
+.bb-flag-british-columbia {
+  @include bb_flag_image('123-british-columbia.png');
+}
+
+.bb-flag-angola {
+  @include bb_flag_image('124-angola.png');
+}
+
+.bb-flag-azerbaijan {
+  @include bb_flag_image('125-azerbaijan.png');
+}
+
+.bb-flag-algeria {
+  @include bb_flag_image('126-algeria.png');
+}
+
+.bb-flag-botswana {
+  @include bb_flag_image('127-botswana.png');
+}
+
+.bb-flag-bangladesh {
+  @include bb_flag_image('128-bangladesh.png');
+}
+
+.bb-flag-cuba {
+  @include bb_flag_image('129-cuba.png');
+}
+
+.bb-flag-australia {
+  @include bb_flag_image('130-australia.png');
+}
+
+.bb-flag-costa-rica {
+  @include bb_flag_image('131-costa-rica.png');
+}
+
+.bb-flag-cambodia {
+  @include bb_flag_image('132-cambodia.png');
+}
+
+.bb-flag-bolivia {
+  @include bb_flag_image('133-bolivia.png');
+}
+
+.bb-flag-croatia {
+  @include bb_flag_image('134-croatia.png');
+}
+
+.bb-flag-bulgaria {
+  @include bb_flag_image('135-bulgaria.png');
+}
+
+.bb-flag-galapagos-islands {
+  @include bb_flag_image('136-galapagos-islands.png');
+}
+
+.bb-flag-martinique {
+  @include bb_flag_image('137-martinique.png');
+}
+
+.bb-flag-tonga {
+  @include bb_flag_image('138-tonga.png');
+}
+
+.bb-flag-st-lucia {
+  @include bb_flag_image('139-st-lucia.png');
+}
+
+.bb-flag-rapa-nui {
+  @include bb_flag_image('140-rapa-nui.png');
+}
+
+.bb-flag-singapore {
+  @include bb_flag_image('141-singapore.png');
+}
+
+.bb-flag-palau {
+  @include bb_flag_image('142-palau.png');
+}
+
+.bb-flag-niue {
+  @include bb_flag_image('143-niue.png');
+}
+
+.bb-flag-macao {
+  @include bb_flag_image('144-macao.png');
+}
+
+.bb-flag-fiji {
+  @include bb_flag_image('145-fiji.png');
+}
+
+.bb-flag-faroe-islands {
+  @include bb_flag_image('146-faroe-islands.png');
+}
+
+.bb-flag-dominica {
+  @include bb_flag_image('147-dominica.png');
+}
+
+.bb-flag-vanuatu {
+  @include bb_flag_image('148-vanuatu.png');
+}
+
+.bb-flag-sierra-leone {
+  @include bb_flag_image('149-sierra-leone.png');
+}
+
+.bb-flag-seychelles {
+  @include bb_flag_image('150-seychelles.png');
+}
+
+.bb-flag-kosovo {
+  @include bb_flag_image('151-kosovo.png');
+}
+
+.bb-flag-england {
+  @include bb_flag_image('152-england.png');
+}
+
+.bb-flag-united-states-of-america {
+  @include bb_flag_image('153-united-states-of-america.png');
+}
+
+.bb-flag-guinea {
+  @include bb_flag_image('154-guinea.png');
+}
+
+.bb-flag-orkney-islands {
+  @include bb_flag_image('155-orkney-islands.png');
+}
+
+.bb-flag-turks-and-caicos {
+  @include bb_flag_image('156-turks-and-caicos.png');
+}
+
+.bb-flag-transnistria {
+  @include bb_flag_image('157-transnistria.png');
+}
+
+.bb-flag-tokelau {
+  @include bb_flag_image('158-tokelau.png');
+}
+
+.bb-flag-gambia {
+  @include bb_flag_image('159-gambia.png');
+}
+
+.bb-flag-st-vincent-and-the-grenadines {
+  @include bb_flag_image('160-st-vincent-and-the-grenadines.png');
+}
+
+.bb-flag-south-sudan {
+  @include bb_flag_image('161-south-sudan.png');
+}
+
+.bb-flag-somaliland {
+  @include bb_flag_image('162-somaliland.png');
+}
+
+.bb-flag-solomon-islands {
+  @include bb_flag_image('163-solomon-islands.png');
+}
+
+.bb-flag-vietnam {
+  @include bb_flag_image('164-vietnam.png');
+}
+
+.bb-flag-sint-maarten {
+  @include bb_flag_image('165-sint-maarten.png');
+}
+
+.bb-flag-sint-eustatius {
+  @include bb_flag_image('166-sint-eustatius.png');
+}
+
+.bb-flag-saint-kitts-and-nevis {
+  @include bb_flag_image('167-saint-kitts-and-nevis.png');
+}
+
+.bb-flag-saba-island {
+  @include bb_flag_image('168-saba-island.png');
+}
+
+.bb-flag-pitcairn-islands {
+  @include bb_flag_image('169-pitcairn-islands.png');
+}
+
+.bb-flag-palestine {
+  @include bb_flag_image('170-palestine.png');
+}
+
+.bb-flag-ossetia {
+  @include bb_flag_image('171-ossetia.png');
+}
+
+.bb-flag-northern-marianas-islands {
+  @include bb_flag_image('172-northern-marianas-islands.png');
+}
+
+.bb-flag-nauru {
+  @include bb_flag_image('173-nauru.png');
+}
+
+.bb-flag-portugal {
+  @include bb_flag_image('174-portugal.png');
+}
+
+.bb-flag-montserrat {
+  @include bb_flag_image('175-montserrat.png');
+}
+
+.bb-flag-melilla {
+  @include bb_flag_image('176-melilla.png');
+}
+
+.bb-flag-mauritania {
+  @include bb_flag_image('177-mauritania.png');
+}
+
+.bb-flag-kuwait {
+  @include bb_flag_image('178-kuwait.png');
+}
+
+.bb-flag-kiribati {
+  @include bb_flag_image('179-kiribati.png');
+}
+
+.bb-flag-guernsey {
+  @include bb_flag_image('180-guernsey.png');
+}
+
+.bb-flag-guam {
+  @include bb_flag_image('181-guam.png');
+}
+
+.bb-flag-grenada {
+  @include bb_flag_image('182-grenada.png');
+}
+
+.bb-flag-greenland {
+  @include bb_flag_image('183-greenland.png');
+}
+
+.bb-flag-thailand {
+  @include bb_flag_image('184-thailand.png');
+}
+
+.bb-flag-gibraltar {
+  @include bb_flag_image('185-gibraltar.png');
+}
+
+.bb-flag-gabon {
+  @include bb_flag_image('186-gabon.png');
+}
+
+.bb-flag-falkland-islands {
+  @include bb_flag_image('187-falkland-islands.png');
+}
+
+.bb-flag-virgin-islands {
+  @include bb_flag_image('188-virgin-islands.png');
+}
+
+.bb-flag-austria {
+  @include bb_flag_image('189-austria.png');
+}
+
+.bb-flag-vatican-city {
+  @include bb_flag_image('190-vatican-city.png');
+}
+
+.bb-flag-tubalu {
+  @include bb_flag_image('191-tubalu.png');
+}
+
+.bb-flag-turkmenistan {
+  @include bb_flag_image('192-turkmenistan.png');
+}
+
+.bb-flag-togo {
+  @include bb_flag_image('193-togo.png');
+}
+
+.bb-flag-bahamas {
+  @include bb_flag_image('194-bahamas.png');
+}
+
+.bb-flag-netherlands {
+  @include bb_flag_image('195-netherlands.png');
+}
+
+.bb-flag-azores-islands {
+  @include bb_flag_image('196-azores-islands.png');
+}
+
+.bb-flag-suriname {
+  @include bb_flag_image('197-suriname.png');
+}
+
+.bb-flag-somalia {
+  @include bb_flag_image('198-somalia.png');
+}
+
+.bb-flag-sicily {
+  @include bb_flag_image('199-sicily.png');
+}
+
+.bb-flag-sardinia {
+  @include bb_flag_image('200-sardinia.png');
+}
+
+.bb-flag-sao-tome-and-principe {
+  @include bb_flag_image('201-sao-tome-and-principe.png');
+}
+
+.bb-flag-norfolk-island {
+  @include bb_flag_image('202-norfolk-island.png');
+}
+
+.bb-flag-niger {
+  @include bb_flag_image('203-niger.png');
+}
+
+.bb-flag-micronesia {
+  @include bb_flag_image('204-micronesia.png');
+}
+
+.bb-flag-marshall-island {
+  @include bb_flag_image('205-marshall-island.png');
+}
+
+.bb-flag-canada {
+  @include bb_flag_image('206-canada.png');
+}
+
+.bb-flag-mali {
+  @include bb_flag_image('207-mali.png');
+}
+
+.bb-flag-kyrgyzstan {
+  @include bb_flag_image('208-kyrgyzstan.png');
+}
+
+.bb-flag-guinea-bissau {
+  @include bb_flag_image('209-guinea-bissau.png');
+}
+
+.bb-flag-eritrea {
+  @include bb_flag_image('210-eritrea.png');
+}
+
+.bb-flag-djibouti {
+  @include bb_flag_image('211-djibouti.png');
+}
+
+.bb-flag-curacao {
+  @include bb_flag_image('212-curacao.png');
+}
+
+.bb-flag-st-barts {
+  @include bb_flag_image('213-st-barts.png');
+}
+
+.bb-flag-san-marino {
+  @include bb_flag_image('214-san-marino.png');
+}
+
+.bb-flag-northen-cyprus {
+  @include bb_flag_image('215-northen-cyprus.png');
+}
+
+.bb-flag-liechtenstein {
+  @include bb_flag_image('216-liechtenstein.png');
+}
+
+.bb-flag-india {
+  @include bb_flag_image('217-india.png');
+}
+
+.bb-flag-liberia {
+  @include bb_flag_image('218-liberia.png');
+}
+
+.bb-flag-yemen {
+  @include bb_flag_image('219-yemen.png');
+}
+
+.bb-flag-uzbekistn {
+  @include bb_flag_image('220-uzbekistn.png');
+}
+
+.bb-flag-sudan {
+  @include bb_flag_image('221-sudan.png');
+}
+
+.bb-flag-sahrawi-arab-democratic-republic {
+  @include bb_flag_image('222-sahrawi-arab-democratic-republic.png');
+}
+
+.bb-flag-republic-of-macedonia {
+  @include bb_flag_image('223-republic-of-macedonia.png');
+}
+
+.bb-flag-otan {
+  @include bb_flag_image('224-otan.png');
+}
+
+.bb-flag-libya {
+  @include bb_flag_image('225-libya.png');
+}
+
+.bb-flag-east-timor {
+  @include bb_flag_image('226-east-timor.png');
+}
+
+.bb-flag-tibet {
+  @include bb_flag_image('227-tibet.png');
+}
+
+.bb-flag-russia {
+  @include bb_flag_image('228-russia.png');
+}
+
+.bb-flag-papua-new-guinea {
+  @include bb_flag_image('229-papua-new-guinea.png');
+}
+
+.bb-flag-montenegro {
+  @include bb_flag_image('230-montenegro.png');
+}
+
+.bb-flag-moldova {
+  @include bb_flag_image('231-moldova.png');
+}
+
+.bb-flag-maldives {
+  @include bb_flag_image('232-maldives.png');
+}
+
+.bb-flag-madeira {
+  @include bb_flag_image('233-madeira.png');
+}
+
+.bb-flag-french-polynesia {
+  @include bb_flag_image('234-french-polynesia.png');
+}
+
+.bb-flag-trinidad-and-tobago {
+  @include bb_flag_image('235-trinidad-and-tobago.png');
+}
+
+.bb-flag-tajikistan {
+  @include bb_flag_image('236-tajikistan.png');
+}
+
+.bb-flag-swaziland {
+  @include bb_flag_image('237-swaziland.png');
+}
+
+.bb-flag-sri-lanka {
+  @include bb_flag_image('238-sri-lanka.png');
+}
+
+.bb-flag-mexico {
+  @include bb_flag_image('239-mexico.png');
+}
+
+.bb-flag-republic-of-the-congo {
+  @include bb_flag_image('240-republic-of-the-congo.png');
+}
+
+.bb-flag-equatorial-guinea {
+  @include bb_flag_image('241-equatorial-guinea.png');
+}
+
+.bb-flag-zimbabwe {
+  @include bb_flag_image('242-zimbabwe.png');
+}
+
+.bb-flag-rwanda {
+  @include bb_flag_image('243-rwanda.png');
+}
+
+.bb-flag-lesotho {
+  @include bb_flag_image('244-lesotho.png');
+}
+
+.bb-flag-ivory-coast {
+  @include bb_flag_image('245-ivory-coast.png');
+}
+
+.bb-flag-isle-of-man {
+  @include bb_flag_image('246-isle-of-man.png');
+}
+
+.bb-flag-haiti {
+  @include bb_flag_image('247-haiti.png');
+}
+
+.bb-flag-samoa {
+  @include bb_flag_image('248-samoa.png');
+}
+
+.bb-flag-nepal {
+  @include bb_flag_image('249-nepal.png');
+}
+
+.bb-flag-brazil {
+  @include bb_flag_image('250-brazil.png');
+}
+
+.bb-flag-mongolia {
+  @include bb_flag_image('251-mongolia.png');
+}
+
+.bb-flag-malawi {
+  @include bb_flag_image('252-malawi.png');
+}
+
+.bb-flag-madagascar {
+  @include bb_flag_image('253-madagascar.png');
+}
+
+.bb-flag-jersey {
+  @include bb_flag_image('254-jersey.png');
+}
+
+.bb-flag-ghana {
+  @include bb_flag_image('255-ghana.png');
+}
+
+.bb-flag-georgia {
+  @include bb_flag_image('256-georgia.png');
+}
+
+.bb-flag-estonia {
+  @include bb_flag_image('257-estonia.png');
+}
+
+.bb-flag-democratic-republic-of-congo {
+  @include bb_flag_image('258-democratic-republic-of-congo.png');
+}
+
+.bb-flag-senegal {
+  @include bb_flag_image('259-senegal.png');
+}
+
+.bb-flag-china {
+  @include bb_flag_image('261-china.png');
+}
+
+.bb-flag-united-kingdom {
+  @include bb_flag_image('262-united-kingdom.png');
+}
