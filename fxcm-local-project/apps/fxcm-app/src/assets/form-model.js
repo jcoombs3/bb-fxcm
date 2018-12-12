@@ -38,9 +38,9 @@ function createFormModel() {
           {
             name: 'P0-C0-F0',
             properties: {
-              classId: 'FxcmFormInputTextComponent',
+              classId: 'BbFormInputTextComponent',
               label: 'Text Component',
-              dataType: 'password',
+              dataType: 'text',
               value: '',
               placeholder: 'Enter text...',
               helpText: 'You can enter text in this field',
