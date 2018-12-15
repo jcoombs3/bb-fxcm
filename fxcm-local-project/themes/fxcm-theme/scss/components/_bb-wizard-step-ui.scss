@@ -17,6 +17,13 @@ $wizard_step_icon_size: 1.8rem;
   color: $fxcm_night;
   text-align: center;
   
+  .bb-wizard-step-circle-container {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
   .bb-wizard-step-circle {
     width: $wizard_step_width;
     height: $wizard_step_width;

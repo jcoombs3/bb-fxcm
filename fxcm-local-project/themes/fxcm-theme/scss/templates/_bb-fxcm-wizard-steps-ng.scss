@@ -1,10 +1,10 @@
 /**
 * FXCM Wizard Steps
 * Design(s): https://backbase.invisionapp.com/share/QWOBF4IKCDF#/screens/322663672
-
+*
 * @author  BB-ATL FE
-* @version 1.0.0
-* @since   12-12-2018
+* @version 1.0.1
+* @since   12-17-2018
 *
 * Changes from Design:
 * - None
@@ -13,4 +13,25 @@
 .bb-fxcm-wizard-steps {
   background: $fxcm_wizard_bg;
   padding: 15px;
+  
+  .bb-wizard-step-circle {
+    position: relative;
+    z-index: 5;
+    background: $fxcm_wizard_bg;
+  }
+  
+  .bb-wizard-step-circle-container:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: $fxcm_night;
+    position: absolute;
+    left: 50%;
+    z-index: 0;
+  }
+  
+  .col-sm:last-child 
+  .bb-wizard-step-circle-container:after {
+    display: none;
+  }
 }
