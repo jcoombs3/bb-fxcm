@@ -24,6 +24,12 @@ window.document.addEventListener('DOMContentLoaded', () => {
     properties: {},
     children: [
       {
+        name: 'wizard-steps',
+        properties: {
+          classId: 'FxcmWizardStepsComponent'
+        }
+      },
+      {
         name: 'styleguide',
         properties: {
           classId: 'FxcmStyleguideComponent'

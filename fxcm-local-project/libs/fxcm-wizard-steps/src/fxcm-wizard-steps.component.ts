@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'bb-fxcm-wizard-steps',
-  template: `
-    <p>
-      fxcm-wizard-steps works!
-    </p>
-  `,
+  templateUrl: './fxcm-wizard-steps.component.html',
   styles: []
 })
 export class FxcmWizardStepsComponent implements OnInit {
